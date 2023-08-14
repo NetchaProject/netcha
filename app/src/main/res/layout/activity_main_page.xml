@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainPage">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/main_page_toolbar"
+        app:titleMarginStart="150dp"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_login_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="170dp"
+        android:fontFamily="@font/chosun_font"
+        android:text="@string/main_page_text_login_user"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <HorizontalScrollView
+        android:id="@+id/sv_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login_id">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_profile1"
+                android:layout_marginStart="17dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/home_profile_image1"/>
+            <ImageView
+                android:id="@+id/iv_profile2"
+                android:layout_marginStart="17dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/home_profile_image2"/>
+            <ImageView
+                android:id="@+id/iv_profile3"
+                android:layout_marginStart="17dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/home_profile_image3"/>
+            <ImageView
+                android:id="@+id/iv_profile4"
+                android:layout_marginStart="17dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/home_profile_image4"/>
+            <ImageView
+                android:id="@+id/iv_profile5"
+                android:layout_marginStart="17dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/home_profile_image5"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="170dp"
+        android:fontFamily="@font/chosun_font"
+        android:text="@string/main_page_text_recommend_movie"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sv_profile"/>
+
+    <ScrollView
+        android:id="@+id/sv_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_movie1"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="17dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/detailpage_image1"/>
+            <ImageView
+                android:id="@+id/iv_movie2"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="17dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/detailpage_image2"/>
+            <ImageView
+                android:id="@+id/iv_movie3"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="17dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/detailpage_image3"/>
+
+            <ImageView
+                android:id="@+id/iv_movie4"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="17dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/detailpage_image4" />
+
+            <ImageView
+                android:id="@+id/iv_movie5"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="17dp"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/detailpage_image5"/>
+            <ImageView
+                android:id="@+id/iv_movie6"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="17dp"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/detailpage_image6"/>
+
+            <ImageView
+                android:id="@+id/dummy_view"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
