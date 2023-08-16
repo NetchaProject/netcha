@@ -15,6 +15,5 @@ class ProfilePageHeyrin : AppCompatActivity() {
         back_mypage.setOnClickListener {
             finish()
         }
-
     }
 }
