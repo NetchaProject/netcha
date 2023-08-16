@@ -20,17 +20,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
 
-    <WebView
-        android:id="@+id/webView"
-        android:layout_width="359dp"
-        android:layout_height="168dp"
-        android:layout_marginBottom="464dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-    </WebView>
-
 
     <TextView
         android:id="@+id/pregview"
@@ -285,5 +274,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back_button" />
+
+    <ImageView
+        android:id="@+id/detailpage_image_preview2"
+        android:layout_width="320dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="476dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/detailpage_image_preview2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

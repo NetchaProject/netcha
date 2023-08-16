@@ -283,8 +283,8 @@
 
     <ImageView
         android:id="@+id/detailpage_image_preview1"
-        android:layout_width="325dp"
-        android:layout_height="163dp"
+        android:layout_width="320dp"
+        android:layout_height="160dp"
         android:src="@drawable/detailpage_image_preview1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
