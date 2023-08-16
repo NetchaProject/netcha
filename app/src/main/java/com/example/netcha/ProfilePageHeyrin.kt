@@ -9,7 +9,7 @@ class ProfilePageHeyrin : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_detailpage)
+        setContentView(R.layout.activity_mypage_heyrin)
 
         val back_mypage = findViewById<ImageView>(R.id.back_mypage)
         back_mypage.setOnClickListener {
