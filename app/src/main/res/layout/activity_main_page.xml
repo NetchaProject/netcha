@@ -21,6 +21,7 @@
         app:titleTextColor="@color/purple" >
 
         <ImageButton
+            android:id="@+id/bt_logout"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/logout_button"
