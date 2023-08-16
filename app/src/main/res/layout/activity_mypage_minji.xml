@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     android:padding="5dp"
-    tools:context=".Mypage_minji">
+    tools:context=".ProfilePageMinji">
 
     <ImageView
         android:id="@+id/back_mypage"
