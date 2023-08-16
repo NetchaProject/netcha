@@ -69,6 +69,7 @@ class MainPage : AppCompatActivity() {
                     overridePendingTransition(R.anim.slide_right_enter,R.anim.slide_right_exit)
                 })
             builder.show()
+
         }
     }
 }
