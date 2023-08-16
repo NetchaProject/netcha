@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="main_page_toolbar_font" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/chosun_font</item>
+    </style>
+    <style name="main_page_toolbar_text_size" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
