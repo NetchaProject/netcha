@@ -1,15 +1,11 @@
 package com.example.netcha
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class MainActivity : AppCompatActivity() {
+class MovieDetailPage4 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        val intent = Intent(this, MainPage::class.java)
-        startActivity(intent)
+        setContentView(R.layout.activity_movie_detail_page4)
     }
 }

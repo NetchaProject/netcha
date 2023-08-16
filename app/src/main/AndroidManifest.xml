@@ -13,22 +13,46 @@
         android:theme="@style/Theme.Netcha"
         tools:targetApi="31">
         <activity
-            android:name=".Mypage_minji"
+            android:name=".MovieDetailPage6"
             android:exported="false" />
         <activity
-            android:name=".Mypage_donghyun"
+            android:name=".MainActivity6"
             android:exported="false" />
         <activity
-            android:name=".Mypage_heyrin"
+            android:name=".MovieDetailPage5"
             android:exported="false" />
         <activity
-            android:name=".Mypage_yongsuk"
+            android:name=".MovieDetailPage4"
             android:exported="false" />
         <activity
-            android:name=".Mypage_jina"
+            android:name=".MovieDetailPage3"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MovieDetailPage2"
+            android:exported="false" />
+        <activity
+            android:name=".MovieDetailPage1"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePageMinji"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePageDonghyun"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePageHeyrin"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePageYongseok"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePageJina"
+            android:exported="false" />
+        <activity
+            android:name=".SignInActivity"
             android:exported="false" />
         <activity
             android:name=".MainPage"

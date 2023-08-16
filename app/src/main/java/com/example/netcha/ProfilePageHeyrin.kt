@@ -5,11 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 
-class Mypage_donghyun : AppCompatActivity() {
+class ProfilePageHeyrin : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_mypage_donghyun)
+        setContentView(R.layout.activity_detailpage)
 
         val back_mypage = findViewById<ImageView>(R.id.back_mypage)
         back_mypage.setOnClickListener {

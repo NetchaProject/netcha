@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     android:padding="5dp"
-    tools:context=".ProfilePageJina">
+    tools:context=".ProfilePageHeyrin">
 
     <ImageView
         android:id="@+id/back_mypage"
@@ -26,7 +26,7 @@
         android:layout_height="50dp"
         android:layout_margin="10dp"
         android:gravity="center"
-        android:text="@string/title_mypage1"
+        android:text="@string/title_mypage3"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -55,7 +55,8 @@
         android:id="@+id/profile_image"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:src="@drawable/profile_image2"
+
+        android:src="@drawable/profile_image1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile" />
@@ -84,7 +85,7 @@
         android:layout_marginStart="3dp"
         android:layout_marginTop="4dp"
         android:backgroundTint="@color/yellow"
-        android:text="@string/fantasygenre_mypage"
+        android:text="@string/romancegenre_mypage"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -98,7 +99,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginRight="3dp"
         android:backgroundTint="@color/purple"
-        android:text="@string/actiongenre_mypage"
+        android:text="@string/mysterygenre_mypage"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/btn_genre3"
@@ -112,7 +113,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginEnd="3dp"
         android:backgroundTint="@color/yellow"
-        android:text="@string/romancegenre_mypage"
+        android:text="@string/actiongenre_mypage"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -143,7 +144,7 @@
         android:layout_marginStart="3dp"
         android:layout_marginTop="4dp"
         android:backgroundTint="@color/purple"
-        android:text="@string/moviename6_mypage"
+        android:text="@string/moviename10_mypage"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -157,7 +158,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginRight="3dp"
         android:backgroundTint="@color/yellow"
-        android:text="@string/moviename7_mypage"
+        android:text="@string/moviename11_mypage"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/btn_movie3"
@@ -172,7 +173,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginEnd="3dp"
         android:backgroundTint="@color/purple"
-        android:text="@string/moviename8_mypage"
+        android:text="@string/moviename12_mypage"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -209,7 +210,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/edittextfont"
             android:gravity="center"
-            android:text="@string/editQuote_mypage_jin"
+            android:text="@string/editQuote_mypage_rin"
             android:textColor="@color/red"
             android:textSize="37sp"
             android:textStyle="bold"
@@ -218,5 +219,6 @@
             />
 
     </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
