@@ -4,12 +4,6 @@
     <string name="main_page_toolbar">HOME</string>
     <string name="main_page_text_login_user">Welcome. My nbcamp</string>
     <string name="main_page_text_recommend_movie">Featured Movie List</string>
-    <string name="main_page_summary_movie1">The synopsis goes here. You have to put in the synopsis to implement the select implementation view function. Translation into English is a bit...</string>
-    <string name="main_page_summary_movie2">The synopsis goes here. You have to put in the synopsis to implement the select implementation view function. Translation into English is a bit...</string>
-    <string name="main_page_summary_movie3">The synopsis goes here. You have to put in the synopsis to implement the select implementation view function. Translation into English is a bit...</string>
-    <string name="main_page_summary_movie4">The synopsis goes here. You have to put in the synopsis to implement the select implementation view function. Translation into English is a bit...</string>
-    <string name="main_page_summary_movie5">The synopsis goes here. You have to put in the synopsis to implement the select implementation view function. Translation into English is a bit...</string>
-    <string name="main_page_summary_movie6">The synopsis goes here. You have to put in the synopsis to implement the select implementation view function. Translation into English is a bit...</string>
     <string name="title_mypage1">진아 페이지</string>
     <string name="title_mypage2">용석 페이지</string>
     <string name="title_mypage3">혜린 페이지</string>
