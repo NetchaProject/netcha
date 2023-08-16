@@ -8,17 +8,16 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.ScrollView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 
 class MainPage : AppCompatActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_page)
-
-
+        val btnLogout : ImageButton = findViewById(R.id.bt_logout)
         val imageViewList = listOf(
             findViewById<ImageView>(R.id.iv_profile1),
             findViewById<ImageView>(R.id.iv_profile2),
@@ -55,6 +54,22 @@ class MainPage : AppCompatActivity() {
                     overridePendingTransition(R.anim.slide_left_enter,R.anim.slide_left_exit)
                 }
             }
+        }
+
+        btnLogout.setOnClickListener {
+            val builder = AlertDialog.Builder(this)
+            builder.setMessage("로그아웃 하시겠습니까?")
+                .setNegativeButton("취소",
+                DialogInterface.OnClickListener{ dialog, id ->
+
+                })
+                .setPositiveButton("확인",
+                DialogInterface.OnClickListener { dialog, id ->
+                    finish()
+                    overridePendingTransition(R.anim.slide_right_enter,R.anim.slide_right_exit)
+                })
+            builder.show()
+
         }
     }
 }

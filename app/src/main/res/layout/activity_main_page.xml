@@ -144,30 +144,6 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/detailpage_image1" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/tv_movie1"
-                    android:layout_width="270dp"
-                    android:layout_height="wrap_content"
-                    android:maxLines="1"
-                    android:ellipsize="end"
-                    android:textColor="@color/purple"
-                    android:textSize="20sp"
-                    android:text="@string/main_page_summary_movie1"/>
-
-                <Button
-                    android:id="@+id/btn_summary1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="더보기"/>
-
-            </LinearLayout>
-
-
 
             <ImageView
                 android:id="@+id/iv_movie2"
@@ -177,15 +153,6 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/detailpage_image2" />
 
-            <TextView
-                android:id="@+id/tv_movie2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:maxLines="1"
-                android:ellipsize="end"
-                android:textColor="@color/purple"
-                android:textSize="20sp"
-                android:text="@string/main_page_summary_movie2"/>
 
             <ImageView
                 android:id="@+id/iv_movie3"
@@ -195,16 +162,6 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/detailpage_image3" />
 
-            <TextView
-                android:id="@+id/tv_movie3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:maxLines="1"
-                android:ellipsize="end"
-                android:textColor="@color/purple"
-                android:textSize="20sp"
-                android:text="@string/main_page_summary_movie3"/>
-
             <ImageView
                 android:id="@+id/iv_movie4"
                 android:layout_width="match_parent"
@@ -212,16 +169,6 @@
                 android:layout_marginTop="17sp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/detailpage_image4" />
-
-            <TextView
-                android:id="@+id/tv_movie4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:maxLines="1"
-                android:ellipsize="end"
-                android:textColor="@color/purple"
-                android:textSize="20sp"
-                android:text="@string/main_page_summary_movie4"/>
 
             <ImageView
                 android:id="@+id/iv_movie5"
@@ -232,16 +179,6 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/detailpage_image5" />
 
-            <TextView
-                android:id="@+id/tv_movie5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:maxLines="1"
-                android:ellipsize="end"
-                android:textColor="@color/purple"
-                android:textSize="20sp"
-                android:text="@string/main_page_summary_movie5"/>
-
             <ImageView
                 android:id="@+id/iv_movie6"
                 android:layout_width="match_parent"
@@ -250,16 +187,6 @@
                 android:clipToOutline="true"
                 android:scaleType="centerCrop"
                 android:src="@drawable/detailpage_image6" />
-
-            <TextView
-                android:id="@+id/tv_movie6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:maxLines="1"
-                android:ellipsize="end"
-                android:textColor="@color/purple"
-                android:textSize="20sp"
-                android:text="@string/main_page_summary_movie6"/>
 
             <ImageView
                 android:id="@+id/dummy_view"

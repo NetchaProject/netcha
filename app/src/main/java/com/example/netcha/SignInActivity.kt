@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 
 class SignInActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,6 +13,7 @@ class SignInActivity : AppCompatActivity() {
         val btnSignIn : Button = findViewById(R.id.btn_signin)
         val btnSignUp : Button = findViewById(R.id.btn_signup)
 
+
         btnSignIn.setOnClickListener {
             val intent = Intent(this,MainPage::class.java)
             startActivity(intent)
@@ -19,7 +21,6 @@ class SignInActivity : AppCompatActivity() {
         }
 
         btnSignUp.setOnClickListener {
-
             val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
         }

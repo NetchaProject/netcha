@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,7 +14,7 @@
         android:layout_height="41dp"
         android:layout_marginEnd="148dp"
         android:fontFamily="@font/chosun_font"
-        android:text="영화 상세"
+        android:text="@string/movie_detail"
         android:textColor="@color/white"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,16 +22,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
 
-    <WebView
-        android:id="@+id/webView"
-        android:layout_width="359dp"
-        android:layout_height="168dp"
-        android:layout_marginBottom="464dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
 
-    </WebView>
 
 
     <TextView
@@ -39,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
         android:fontFamily="@font/chosun_font"
-        android:text="예고편"
+        android:text="@string/movie_detail_preview"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.069"
@@ -61,28 +53,63 @@
             android:id="@+id/starin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="출연"
-            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/chosun_font"
-            app:layout_constraintBottom_toTopOf="@+id/starin_detail"
+            android:text="@string/movie_detail_actor"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.133"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_profile1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/detailpage_actor1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/starin" />
+        <TextView
+            android:id="@+id/charactername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/chosun_font"
+            android:text="김다미"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/iv_profile1"
+            app:layout_constraintStart_toStartOf="@+id/iv_profile1"
+            app:layout_constraintTop_toBottomOf="@+id/iv_profile1" />
 
         <TextView
-            android:id="@+id/starin_detail"
-            android:layout_width="125dp"
-            android:layout_height="95dp"
-            android:layout_marginBottom="40dp"
-            android:text="출연진 모음 배열 소스 만들어서서 넣기"
+            android:id="@+id/charactername2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
             android:fontFamily="@font/chosun_font"
+            android:text="조민수"
             android:textColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.523"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintEnd_toEndOf="@+id/iv_profile2"
+            app:layout_constraintStart_toStartOf="@+id/iv_profile2"
+            app:layout_constraintTop_toBottomOf="@+id/iv_profile2" />
 
+        <ImageView
+            android:id="@+id/iv_profile2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/shape"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/detailpage_actor2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/iv_profile1"
+            app:layout_constraintTop_toBottomOf="@+id/starin" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -96,31 +123,58 @@
         app:layout_constraintHorizontal_bias="0.898"
         app:layout_constraintStart_toStartOf="parent">
 
+
         <TextView
             android:id="@+id/rating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="평점"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/chosun_font"
+            android:text="@string/movie_detail_rating"
             android:textColor="@color/white"
-            app:layout_constraintBottom_toTopOf="@+id/textView7"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.155"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="0.069"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+            android:layout_width="81dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="12dp"
+            android:numStars="5"
+            android:rating="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.121"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rating" />
 
         <TextView
-            android:id="@+id/textView7"
-            android:layout_width="124dp"
-            android:layout_height="127dp"
-            android:layout_marginBottom="16dp"
-            android:text="평점 모음 배열 소스로 만들어서 넣기"
-            android:fontFamily="@font/chosun_font"
-            android:textColor="@color/white"
+            android:id="@+id/rating_review"
+            android:layout_width="142dp"
+            android:layout_height="44dp"
+            android:gravity="right"
+            android:text="기시감의 연속. 김다미의 발굴에는 박수를"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.628"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+            app:layout_constraintVertical_bias="0.111" />
+
+        <TextView
+            android:id="@+id/rating_reviewer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="임수연"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.939"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+            app:layout_constraintVertical_bias="0.509" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -141,8 +195,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:text="줄거리"
             android:fontFamily="@font/chosun_font"
+            android:text="@string/movie_detail_plot"
             android:textColor="@color/white"
             app:layout_constraintBottom_toTopOf="@+id/movie_story_detail"
             app:layout_constraintEnd_toEndOf="parent"
@@ -151,17 +205,30 @@
 
         <TextView
             android:id="@+id/movie_story_detail"
-            android:layout_width="120dp"
-            android:layout_height="126dp"
-            android:layout_marginBottom="16dp"
-            android:text="줄거리 넣기"
+            android:layout_width="122dp"
+            android:layout_height="112dp"
+            android:layout_marginBottom="32dp"
             android:fontFamily="@font/chosun_font"
+            android:maxLines="6"
+            android:text="@string/detialpage_summary_movie1"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.384"
             app:layout_constraintStart_toStartOf="parent" />
 
+        <TextView
+            android:id="@+id/view_more"
+            android:layout_width="41dp"
+            android:layout_height="18dp"
+            android:layout_marginEnd="79dp"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/titlefont"
+            android:text="더보기"
+            android:gravity="center"
+            android:textColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/movie_story_detail"
+            app:layout_constraintStart_toStartOf="@+id/movie_story_detail" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -177,30 +244,28 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/famous_line"
+            android:id="@+id/famous_sense"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:text="명장면"
+            android:layout_marginBottom="8dp"
             android:fontFamily="@font/chosun_font"
+            android:text="@string/movie_detail_sense"
             android:textColor="@color/white"
-            app:layout_constraintBottom_toTopOf="@+id/textView8"
+            app:layout_constraintBottom_toTopOf="@+id/famous_sense_img_witch"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.149"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+        <ImageView
+            android:id="@+id/famous_sense_img_witch"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
             android:layout_marginBottom="16dp"
-            android:text="사진 넣기"
-            android:fontFamily="@font/chosun_font"
-            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.576"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            tools:src="@drawable/detailpage_image_sense1" />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -215,5 +280,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back_button" />
+
+    <ImageView
+        android:id="@+id/detailpage_image_preview1"
+        android:layout_width="325dp"
+        android:layout_height="163dp"
+        android:src="@drawable/detailpage_image_preview1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movie_name"
+        app:layout_constraintVertical_bias="0.078" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
