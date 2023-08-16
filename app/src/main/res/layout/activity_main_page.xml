@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".MainPage">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_page_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/main_page_toolbar_font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/main_page_toolbar"
+        app:titleTextAppearance="@style/main_page_toolbar_text_size"
+        app:titleMarginStart="140dp"
+        app:titleTextColor="@color/purple" >
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/logout_button"
+            android:scaleType="centerCrop"
+            android:background="@drawable/shape"
+            android:layout_marginStart="90dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv_login_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/chosun_font"
+        android:text="@string/main_page_text_login_user"
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_page_toolbar" />
+
+    <HorizontalScrollView
+        android:id="@+id/sv_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login_id">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_profile1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="17dp"
+                android:background="@drawable/shape"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/home_profile_image1" />
+
+            <ImageView
+                android:id="@+id/iv_profile2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="17dp"
+                android:background="@drawable/shape"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/home_profile_image2" />
+
+            <ImageView
+                android:id="@+id/iv_profile3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="17dp"
+                android:background="@drawable/shape"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/home_profile_image3" />
+
+            <ImageView
+                android:id="@+id/iv_profile4"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="17dp"
+                android:background="@drawable/shape"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/home_profile_image4" />
+
+            <ImageView
+                android:id="@+id/iv_profile5"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="17dp"
+                android:background="@drawable/shape"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/home_profile_image5" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/chosun_font"
+        android:text="@string/main_page_text_recommend_movie"
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sv_profile" />
+
+    <ScrollView
+        android:id="@+id/sv_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_movie1"
+                android:layout_width="match_parent"
+                android:layout_height="400sp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/detailpage_image1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_movie1"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/purple"
+                    android:textSize="20sp"
+                    android:text="@string/main_page_summary_movie1"/>
+
+                <Button
+                    android:id="@+id/btn_summary1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="더보기"/>
+
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:id="@+id/iv_movie2"
+                android:layout_width="match_parent"
+                android:layout_height="400sp"
+                android:layout_marginTop="17sp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/detailpage_image2" />
+
+            <TextView
+                android:id="@+id/tv_movie2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/purple"
+                android:textSize="20sp"
+                android:text="@string/main_page_summary_movie2"/>
+
+            <ImageView
+                android:id="@+id/iv_movie3"
+                android:layout_width="match_parent"
+                android:layout_height="400sp"
+                android:layout_marginTop="17sp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/detailpage_image3" />
+
+            <TextView
+                android:id="@+id/tv_movie3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/purple"
+                android:textSize="20sp"
+                android:text="@string/main_page_summary_movie3"/>
+
+            <ImageView
+                android:id="@+id/iv_movie4"
+                android:layout_width="match_parent"
+                android:layout_height="400sp"
+                android:layout_marginTop="17sp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/detailpage_image4" />
+
+            <TextView
+                android:id="@+id/tv_movie4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/purple"
+                android:textSize="20sp"
+                android:text="@string/main_page_summary_movie4"/>
+
+            <ImageView
+                android:id="@+id/iv_movie5"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="17dp"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/detailpage_image5" />
+
+            <TextView
+                android:id="@+id/tv_movie5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/purple"
+                android:textSize="20sp"
+                android:text="@string/main_page_summary_movie5"/>
+
+            <ImageView
+                android:id="@+id/iv_movie6"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="17dp"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/detailpage_image6" />
+
+            <TextView
+                android:id="@+id/tv_movie6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/purple"
+                android:textSize="20sp"
+                android:text="@string/main_page_summary_movie6"/>
+
+            <ImageView
+                android:id="@+id/dummy_view"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
