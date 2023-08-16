@@ -1,4 +1,42 @@
 <resources>
     <string name="app_name">netcha</string>
+    <string name="title_mypage1">진아 페이지</string>
+    <string name="title_mypage2">용석 페이지</string>
+    <string name="title_mypage3">혜린 페이지</string>
+    <string name="title_mypage4">동현 페이지</string>
+    <string name="title_mypage5">민지 페이지</string>
+    <string name="profile_mypage">프로필</string>
+    <string name="preferGenre_mypage">선호 영화 장르</string>
+    <string name="actiongenre_mypage">액션</string>
+    <string name="comedygenre_mypage">코미디</string>
+    <string name="thrillergenre_mypage">스릴러</string>
+    <string name="romancegenre_mypage">로맨스</string>
+    <string name="horrorgenre_mypage">공포</string>
+    <string name="sfgenre_mypage">SF</string>
+    <string name="fantasygenre_mypage">판타지</string>
+    <string name="crimegenre_mypage">범죄</string>
+    <string name="mysterygenre_mypage">추리</string>
+    <string name="bestMovie_mypage">인생 영화</string>
+    <string name="moviename1_mypage">신세계</string>
+    <string name="moviename2_mypage">귀공자</string>
+    <string name="moviename3_mypage">마녀</string>
+    <string name="moviename4_mypage">폰부스</string>
+    <string name="moviename5_mypage">분노의질주</string>
+    <string name="moviename6_mypage">해리포터</string>
+    <string name="moviename7_mypage">범죄도시</string>
+    <string name="moviename8_mypage">나의 소녀시대</string>
+    <string name="moviename9_mypage">7광구</string>
+    <string name="moviename10_mypage">라라랜드</string>
+    <string name="moviename11_mypage">주토피아</string>
+    <string name="moviename12_mypage">셜록홈즈</string>
+    <string name="moviename13_mypage">검사외전</string>
+    <string name="moviename14_mypage">행오버</string>
+    <string name="moviename15_mypage">세렌디피티</string>
+    <string name="quote_mypage">기억에 남는 명대사</string>
+    <string name="editQuote_mypage_suk">\" 아직 한 발 남았다. \"</string>
+    <string name="editQuote_mypage_jin">\" 가장 어두운 시간에도 행복은 존재한단다. 불을 켜는 것을 잊지 않는다면 말이야. \"</string>
+    <string name="editQuote_mypage_rin">\" 꿈을 꾸는 그댈 위하여, 비록 바보같다 하여도. 상처입은 가슴을 위하여, 우리의 시행착오를 위하여 \"</string>
+    <string name="editQuote_mypage_hyun">\" 우연히 찾아온 행운 \"</string>
+    <string name="editQuote_mypage_min">\" 꿈은 도망가지 않아, 도망가는건 언제나 나 자신이야 \"</string>
 
 </resources>
