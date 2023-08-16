@@ -16,9 +16,6 @@
             android:name=".MovieDetailPage6"
             android:exported="false" />
         <activity
-            android:name=".MainActivity6"
-            android:exported="false" />
-        <activity
             android:name=".MovieDetailPage5"
             android:exported="false" />
         <activity
@@ -67,5 +64,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
