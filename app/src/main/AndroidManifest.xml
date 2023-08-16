@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Netcha"
-        tools:targetApi="31">
+        tools:targetApi="31"
+        android:usesCleartextTraffic="true"
+        android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout">
         <activity
             android:name=".MovieDetailPage6"
             android:exported="false" />
@@ -23,13 +25,16 @@
             android:exported="false" />
         <activity
             android:name=".MovieDetailPage3"
-            android:exported="false" />
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
         <activity
             android:name=".MovieDetailPage2"
-            android:exported="false" />
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
         <activity
             android:name=".MovieDetailPage1"
-            android:exported="false" />
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
         <activity
             android:name=".SignUpActivity"
             android:exported="false" />
