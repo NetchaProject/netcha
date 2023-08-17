@@ -108,7 +108,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/shape"
+                android:background="@drawable/main_page_profile_shape"
                 android:clipToOutline="true"
                 android:scaleType="centerCrop"
                 android:src="@drawable/detailpage_movie4_character1"
@@ -121,7 +121,7 @@
                 android:layout_height="60dp"
                 android:layout_margin="10dp"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/shape"
+                android:background="@drawable/main_page_profile_shape"
                 android:clipToOutline="true"
                 android:scaleType="centerCrop"
                 android:src="@drawable/detailpage_movie4_character2"
@@ -134,7 +134,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/chosun_font"
-                android:text="@string/detail_page_text_character1"
+                android:text="@string/detail_page4_text_character1"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@+id/detail_page_image_character1"
                 app:layout_constraintStart_toStartOf="@+id/detail_page_image_character1"
@@ -146,7 +146,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="1dp"
                 android:fontFamily="@font/chosun_font"
-                android:text="@string/detail_page_text_character2"
+                android:text="@string/detail_page4_text_character2"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@+id/detail_page_image_character2"
                 app:layout_constraintStart_toStartOf="@+id/detail_page_image_character2"
@@ -327,8 +327,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.868"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/detail_page_ratingBar"
-                app:layout_constraintVertical_bias="0.478" />
+                app:layout_constraintTop_toBottomOf="@+id/detail_page_text_review"
+                app:layout_constraintVertical_bias="0.0" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
