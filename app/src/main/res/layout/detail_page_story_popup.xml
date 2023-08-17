@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/red"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/detail_page_text_detailStory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/titlefont"
+        android:maxLines="20"
+        android:text="@string/detail_page_summary_movie4"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/detail_page_btn_fold"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="접기"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_gravity="end"
+        android:fontFamily="@font/titlefont"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black" />
+
+</LinearLayout>
