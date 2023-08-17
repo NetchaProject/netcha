@@ -4,13 +4,8 @@ import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
-import android.widget.ScrollView
-import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 
 class MainPage : AppCompatActivity() {
@@ -19,8 +14,8 @@ class MainPage : AppCompatActivity() {
         setContentView(R.layout.activity_main_page)
         val btnLogout : ImageButton = findViewById(R.id.bt_logout)
         val imageViewList = listOf(
-            findViewById<ImageView>(R.id.iv_profile1),
-            findViewById<ImageView>(R.id.iv_profile2),
+            findViewById<ImageView>(R.id.detail_page_image_character1),
+            findViewById<ImageView>(R.id.detail_page_image_character2),
             findViewById<ImageView>(R.id.iv_profile3),
             findViewById<ImageView>(R.id.iv_profile4),
             findViewById<ImageView>(R.id.iv_profile5),
@@ -32,8 +27,8 @@ class MainPage : AppCompatActivity() {
             findViewById<ImageView>(R.id.iv_movie6),
         )
         val imageViewMap = mapOf(
-            R.id.iv_profile1 to ProfilePageHeyrin::class.java,
-            R.id.iv_profile2 to ProfilePageJina::class.java,
+            R.id.detail_page_image_character1 to ProfilePageHeyrin::class.java,
+            R.id.detail_page_image_character2 to ProfilePageJina::class.java,
             R.id.iv_profile3 to ProfilePageYongseok::class.java,
             R.id.iv_profile4 to ProfilePageMinji::class.java,
             R.id.iv_profile5 to ProfilePageDonghyun::class.java,

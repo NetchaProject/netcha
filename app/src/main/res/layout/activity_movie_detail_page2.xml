@@ -21,6 +21,7 @@
 
 
     <TextView
+
         android:id="@+id/detailpage2_text_moviedetail"
         android:layout_width="132dp"
         android:layout_height="41dp"
@@ -68,6 +69,7 @@
         android:layout_height="333dp"
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
@@ -311,9 +313,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     tools:src="@drawable/detailpage2_image_sense" />
 
-
             </androidx.constraintlayout.widget.ConstraintLayout>
-
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
