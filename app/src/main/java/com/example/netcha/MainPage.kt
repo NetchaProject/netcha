@@ -17,32 +17,32 @@ class MainPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_page)
-        val btnLogout : ImageButton = findViewById(R.id.bt_logout)
+        val btnLogout : ImageButton = findViewById(R.id.main_page_btn_logout)
         val imageViewList = listOf(
-            findViewById<ImageView>(R.id.iv_profile1),
-            findViewById<ImageView>(R.id.iv_profile2),
-            findViewById<ImageView>(R.id.iv_profile3),
-            findViewById<ImageView>(R.id.iv_profile4),
-            findViewById<ImageView>(R.id.iv_profile5),
-            findViewById<ImageView>(R.id.iv_movie1),
-            findViewById<ImageView>(R.id.iv_movie2),
-            findViewById<ImageView>(R.id.iv_movie3),
-            findViewById<ImageView>(R.id.iv_movie4),
-            findViewById<ImageView>(R.id.iv_movie5),
-            findViewById<ImageView>(R.id.iv_movie6),
+            findViewById<ImageView>(R.id.main_page_iv_profile1),
+            findViewById<ImageView>(R.id.main_page_iv_profile2),
+            findViewById<ImageView>(R.id.main_page_iv_profile3),
+            findViewById<ImageView>(R.id.main_page_iv_profile4),
+            findViewById<ImageView>(R.id.main_page_iv_profile5),
+            findViewById<ImageView>(R.id.main_page_iv_movie1),
+            findViewById<ImageView>(R.id.main_page_iv_movie2),
+            findViewById<ImageView>(R.id.main_page_iv_movie3),
+            findViewById<ImageView>(R.id.main_page_iv_movie4),
+            findViewById<ImageView>(R.id.main_page_iv_movie5),
+            findViewById<ImageView>(R.id.main_page_iv_movie6),
         )
         val imageViewMap = mapOf(
-            R.id.iv_profile1 to ProfilePageHeyrin::class.java,
-            R.id.iv_profile2 to ProfilePageJina::class.java,
-            R.id.iv_profile3 to ProfilePageYongseok::class.java,
-            R.id.iv_profile4 to ProfilePageMinji::class.java,
-            R.id.iv_profile5 to ProfilePageDonghyun::class.java,
-            R.id.iv_movie1 to MovieDetailPage1::class.java,
-            R.id.iv_movie2 to MovieDetailPage2::class.java,
-            R.id.iv_movie3 to MovieDetailPage3::class.java,
-            R.id.iv_movie4 to MovieDetailPage4::class.java,
-            R.id.iv_movie5 to MovieDetailPage5::class.java,
-            R.id.iv_movie6 to MovieDetailPage6::class.java,
+            R.id.main_page_iv_profile1 to ProfilePageHeyrin::class.java,
+            R.id.main_page_iv_profile2 to ProfilePageJina::class.java,
+            R.id.main_page_iv_profile3 to ProfilePageYongseok::class.java,
+            R.id.main_page_iv_profile4 to ProfilePageMinji::class.java,
+            R.id.main_page_iv_profile5 to ProfilePageDonghyun::class.java,
+            R.id.main_page_iv_movie1 to MovieDetailPage1::class.java,
+            R.id.main_page_iv_movie2 to MovieDetailPage2::class.java,
+            R.id.main_page_iv_movie3 to MovieDetailPage3::class.java,
+            R.id.main_page_iv_movie4 to MovieDetailPage4::class.java,
+            R.id.main_page_iv_movie5 to MovieDetailPage5::class.java,
+            R.id.main_page_iv_movie6 to MovieDetailPage6::class.java,
         )
 
         for(imageView in imageViewList){
@@ -69,7 +69,6 @@ class MainPage : AppCompatActivity() {
                     overridePendingTransition(R.anim.slide_right_enter,R.anim.slide_right_exit)
                 })
             builder.show()
-
         }
     }
 }
