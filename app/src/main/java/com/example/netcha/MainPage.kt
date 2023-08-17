@@ -4,13 +4,8 @@ import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
-import android.widget.ScrollView
-import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 
 class MainPage : AppCompatActivity() {
@@ -43,6 +38,17 @@ class MainPage : AppCompatActivity() {
             R.id.main_page_iv_movie4 to MovieDetailPage4::class.java,
             R.id.main_page_iv_movie5 to MovieDetailPage5::class.java,
             R.id.main_page_iv_movie6 to MovieDetailPage6::class.java,
+            findViewById<ImageView>(R.id.detail_page_image_character1),
+            findViewById<ImageView>(R.id.detail_page_image_character2),
+            findViewById<ImageView>(R.id.iv_profile3),
+            findViewById<ImageView>(R.id.iv_profile4),
+            findViewById<ImageView>(R.id.iv_profile5),
+            findViewById<ImageView>(R.id.iv_movie1),
+            findViewById<ImageView>(R.id.iv_movie2),
+            findViewById<ImageView>(R.id.iv_movie3),
+            findViewById<ImageView>(R.id.iv_movie4),
+            findViewById<ImageView>(R.id.iv_movie5),
+            findViewById<ImageView>(R.id.iv_movie6),
         )
 
         for(imageView in imageViewList){
