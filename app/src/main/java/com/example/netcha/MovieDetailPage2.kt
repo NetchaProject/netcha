@@ -5,6 +5,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.TextView
 
 class MovieDetailPage2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +15,7 @@ class MovieDetailPage2 : AppCompatActivity() {
         val image_sense = findViewById<ImageView>(R.id.detialpage2_img_famoussense)
         var image_preview = findViewById<ImageView>(R.id.detailpage2_image_preview1)
         var image_back = findViewById<ImageView>(R.id.detailpage2_btn_back)
+        val viewMore = findViewById<TextView>(R.id.view_more)
         image_sense.setOnClickListener{
             var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://movie.daum.net/moviedb/main?movieId=66593"))
             startActivity(intent)
@@ -24,6 +26,13 @@ class MovieDetailPage2 : AppCompatActivity() {
         }
         image_back.setOnClickListener {
             finish()
+            overridePendingTransition(R.anim.slide_right_enter,R.anim.slide_right_exit)
+        }
+        viewMore.setOnClickListener {
+            val movieSummary = getString(R.string.detailpage_summary_movie2)
+
+            val movieDetailPopup = MovieDetailPopup(this, movieSummary)
+            movieDetailPopup.show()
         }
     }
 }
