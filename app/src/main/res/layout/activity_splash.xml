@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="180dp"
         android:fontFamily="@font/citizen_font1"
-        android:text="NetCha"
+        android:text="@string/app_name"
         android:textColor="@color/white"
         android:textSize="50dp"
         app:layout_constraintEnd_toEndOf="parent"

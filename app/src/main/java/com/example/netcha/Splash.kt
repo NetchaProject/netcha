@@ -6,8 +6,7 @@ import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 
-// startActivity 아래 넣으시면 됩니다. (Activity 전환 애니메이션)
-// overridePendingTransition(들어 오는 부분,나가는 부분)
+
 class Splash : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
