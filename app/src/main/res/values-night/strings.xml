@@ -58,6 +58,16 @@
     <string name="movie_detail_rating1">2편 빨리나왔으면 .. 기다리고있어요!!</string>
     <string name="movie_detail_rating2">액션으로는 끝판왕임 bb</string>
     <string name="detialpage_summary_movie1">10년 전 의문의 사고가 일어난 시설에서 홀로 탈출한 후 모든 기억을 잃은 ‘자윤’. 나이도, 이름도 모르는 자신을 거두고 키워준 노부부의 보살핌으로 씩씩하고 밝은 여고생으로 자라났다. 어려운 집안사정을 돕기 위해 상금이 걸린 오디션 프로그램에 출연한 자윤, 방송이 나간 직후부터 의문의 인물들이 그녀 앞에 나타난다. 자윤의 주변을 맴돌며 날카롭게 지켜보는 남자 ‘귀공자’, 그리고 과거 사고가 일어난 시점부터 사라진 아이를 찾던 ‘닥터 백’과 ‘미스터 최’까지 자신은 전혀 기억하지 못하는 그들의 등장으로, 자윤은 혼란에 휩싸이게 되는데...! 그들이 나타난 후 모든 것이 바뀌었다</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="up_netcha_text">NetCha</string>
+    <string name="up_name_text">이름</string>
+    <string name="up_name_edit_text">이름을 입력해주세요.</string>
+    <string name="up_id_text">ID</string>
+    <string name="up_id_edit_text">최소 3글자 이상 영문 및 숫자로 작성해주세요.</string>
+    <string name="up_check_button">체크</string>
+    <string name="up_pw_text">Password</string>
+    <string name="up_pw_edit_text">최소 3글자이상 영어+특수문자로 작성해주세요</string>
+    <string name="up_sign_up_button">가입</string>
     <string name="detail_page_text_character1">류승룡</string>
     <string name="detail_page_text_character2">이하늬</string>
 </resources>
