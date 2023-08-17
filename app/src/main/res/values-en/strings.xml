@@ -80,15 +80,14 @@
     <string name="rating_movie3_detailpage">한동원</string>
     <string name="sign_up_text">Sign Up</string>
     <string name="up_netcha_text">NetCha</string>
-    <string name="up_name_text">이름</string>
-    <string name="up_name_edit_text">이름을 입력해주세요.</string>
+    <string name="up_name_text">Name</string>
+    <string name="up_name_edit_text">Please enter a name</string>
     <string name="up_id_text">ID</string>
-    <string name="up_id_edit_text">최소 3글자 이상 영문 및 숫자로 작성해주세요.</string>
-    <string name="up_check_button">체크</string>
+    <string name="up_id_edit_text">Please write at least 3 letters in English and numbers.</string>
+    <string name="up_check_button">Check</string>
     <string name="up_pw_text">Password</string>
-    <string name="up_pw_edit_text">최소 3글자이상 영어+특수문자로 작성해주세요</string>
-    <string name="up_sign_up_button">가입</string>
+    <string name="up_pw_edit_text">Please write at least 3 characters in English + special characters</string>
+    <string name="up_sign_up_button">Join</string>
     <string name="detail_page_text_character1">류승룡</string>
     <string name="detail_page_text_character2">이하늬</string>
-
 </resources>

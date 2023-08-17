@@ -38,17 +38,6 @@ class MainPage : AppCompatActivity() {
             R.id.main_page_iv_movie4 to MovieDetailPage4::class.java,
             R.id.main_page_iv_movie5 to MovieDetailPage5::class.java,
             R.id.main_page_iv_movie6 to MovieDetailPage6::class.java,
-            findViewById<ImageView>(R.id.detail_page_image_character1),
-            findViewById<ImageView>(R.id.detail_page_image_character2),
-            findViewById<ImageView>(R.id.iv_profile3),
-            findViewById<ImageView>(R.id.iv_profile4),
-            findViewById<ImageView>(R.id.iv_profile5),
-            findViewById<ImageView>(R.id.iv_movie1),
-            findViewById<ImageView>(R.id.iv_movie2),
-            findViewById<ImageView>(R.id.iv_movie3),
-            findViewById<ImageView>(R.id.iv_movie4),
-            findViewById<ImageView>(R.id.iv_movie5),
-            findViewById<ImageView>(R.id.iv_movie6),
         )
 
         for(imageView in imageViewList){

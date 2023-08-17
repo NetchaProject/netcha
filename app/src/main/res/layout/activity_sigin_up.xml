@@ -51,20 +51,6 @@
         app:layout_constraintTop_toBottomOf="@+id/up_netcha" />
 
 
-    <TextView
-        android:id="@+id/error_message_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:fontFamily="@font/chosun_font"
-        android:text="아이디의 조건이 맞지 않습니다."
-        android:textColor="@color/red"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="@id/up_id"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.455" />
-
     <EditText
         android:id="@+id/up_name_edit"
         android:layout_width="match_parent"
@@ -80,6 +66,7 @@
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/up_name"/>
+
 
     <TextView
         android:id="@+id/up_id"
@@ -157,6 +144,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/up_pw" />
+
+    <TextView
+        android:id="@+id/up_pw_error_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/chosun_font"
+        android:visibility="invisible"
+        android:text="비밀번호의 조건이 맞지 않습니다."
+        android:textColor="@color/red"
+        app:layout_constraintTop_toBottomOf="@+id/up_id_edit"
+        android:layout_marginVertical="40dp"
+        android:layout_marginRight="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
     <Button
         android:id="@+id/up_button"
