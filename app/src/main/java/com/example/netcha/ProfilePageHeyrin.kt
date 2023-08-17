@@ -11,9 +11,10 @@ class ProfilePageHeyrin : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mypage_heyrin)
 
-        val back_mypage = findViewById<ImageView>(R.id.back_mypage)
-        back_mypage.setOnClickListener {
+        val back = findViewById<ImageView>(R.id.mypage_image_back)
+        back.setOnClickListener {
             finish()
+            overridePendingTransition(R.anim.slide_right_enter,R.anim.slide_right_exit)
         }
     }
 }

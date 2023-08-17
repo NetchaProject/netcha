@@ -7,7 +7,7 @@
     android:background="@color/black"
     tools:context=".MovieDetailPage6">
     <TextView
-        android:id="@+id/movie_name"
+        android:id="@+id/detail_page_title"
         android:layout_width="132dp"
         android:layout_height="41dp"
         android:layout_marginEnd="148dp"
@@ -33,7 +33,7 @@
 
 
     <TextView
-        android:id="@+id/pregview"
+        android:id="@+id/detail_page_text_preview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
@@ -46,7 +46,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
+        android:id="@+id/detail_page_cons1"
         android:layout_width="146dp"
         android:layout_height="179dp"
         android:layout_marginBottom="260dp"
@@ -57,7 +57,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/starin"
+            android:id="@+id/detail_page_title_actor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -96,7 +96,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/rating"
+            android:id="@+id/detail_page_title_rating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -125,7 +125,7 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout_2"
+        android:id="@+id/detail_page_cons2"
         android:layout_width="146dp"
         android:layout_height="179dp"
         android:layout_marginBottom="40dp"
@@ -136,20 +136,20 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/movie_story"
+            android:id="@+id/detail_page_title_story"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:text="줄거리"
             android:fontFamily="@font/chosun_font"
             android:textColor="@color/white"
-            app:layout_constraintBottom_toTopOf="@+id/movie_story_detail"
+            app:layout_constraintBottom_toTopOf="@+id/detail_page_text_detailStory"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.112"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/movie_story_detail"
+            android:id="@+id/detail_page_text_detailStory"
             android:layout_width="120dp"
             android:layout_height="126dp"
             android:layout_marginBottom="16dp"
@@ -165,7 +165,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout_3"
+        android:id="@+id/detail_page_cons3"
         android:layout_width="146dp"
         android:layout_height="179dp"
         android:layout_marginBottom="40dp"
@@ -176,7 +176,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/famous_line"
+            android:id="@+id/detail_page_title_bestScene"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
@@ -205,7 +205,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/detail_page_image_back"
         android:layout_width="51dp"
         android:layout_height="41dp"
         android:layout_marginTop="16dp"

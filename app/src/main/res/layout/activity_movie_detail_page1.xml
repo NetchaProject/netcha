@@ -9,7 +9,7 @@
     tools:context=".MovieDetailPage1">
 
     <TextView
-        android:id="@+id/movie_name"
+        android:id="@+id/detail_page_title"
         android:layout_width="132dp"
         android:layout_height="41dp"
         android:layout_marginEnd="148dp"
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.023" />
 
     <TextView
-        android:id="@+id/pregview"
+        android:id="@+id/detail_page_text_preview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
@@ -36,7 +36,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
+        android:id="@+id/detail_page_cons1"
         android:layout_width="146dp"
         android:layout_height="179dp"
         android:layout_marginBottom="260dp"
@@ -47,7 +47,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/starin"
+            android:id="@+id/detail_page_title_actor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -60,7 +60,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/iv_profile1"
+            android:id="@+id/detail_page_image_character1"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="10dp"
@@ -69,32 +69,32 @@
             android:scaleType="centerCrop"
             android:src="@drawable/detailpage_actor1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/starin" />
+            app:layout_constraintTop_toBottomOf="@+id/detail_page_title_actor" />
         <TextView
-            android:id="@+id/charactername"
+            android:id="@+id/detail_page_text_character1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/chosun_font"
             android:text="김다미"
             android:textColor="@color/white"
-            app:layout_constraintEnd_toEndOf="@+id/iv_profile1"
-            app:layout_constraintStart_toStartOf="@+id/iv_profile1"
-            app:layout_constraintTop_toBottomOf="@+id/iv_profile1" />
+            app:layout_constraintEnd_toEndOf="@+id/detail_page_image_character1"
+            app:layout_constraintStart_toStartOf="@+id/detail_page_image_character1"
+            app:layout_constraintTop_toBottomOf="@+id/detail_page_image_character1" />
 
         <TextView
-            android:id="@+id/charactername2"
+            android:id="@+id/detail_page_text_character2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="1dp"
             android:fontFamily="@font/chosun_font"
             android:text="조민수"
             android:textColor="@color/white"
-            app:layout_constraintEnd_toEndOf="@+id/iv_profile2"
-            app:layout_constraintStart_toStartOf="@+id/iv_profile2"
-            app:layout_constraintTop_toBottomOf="@+id/iv_profile2" />
+            app:layout_constraintEnd_toEndOf="@+id/detail_page_image_character2"
+            app:layout_constraintStart_toStartOf="@+id/detail_page_image_character2"
+            app:layout_constraintTop_toBottomOf="@+id/detail_page_image_character2" />
 
         <ImageView
-            android:id="@+id/iv_profile2"
+            android:id="@+id/detail_page_image_character2"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="10dp"
@@ -105,8 +105,8 @@
             android:src="@drawable/detailpage_actor2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/iv_profile1"
-            app:layout_constraintTop_toBottomOf="@+id/starin" />
+            app:layout_constraintStart_toEndOf="@+id/detail_page_image_character1"
+            app:layout_constraintTop_toBottomOf="@+id/detail_page_title_actor" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -122,7 +122,7 @@
 
 
         <TextView
-            android:id="@+id/rating"
+            android:id="@+id/detail_page_title_rating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -135,7 +135,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <RatingBar
-            android:id="@+id/ratingBar"
+            android:id="@+id/detail_page_ratingBar"
             style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
             android:layout_width="81dp"
             android:layout_height="15dp"
@@ -145,10 +145,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.121"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rating" />
+            app:layout_constraintTop_toBottomOf="@+id/detail_page_title_rating" />
 
         <TextView
-            android:id="@+id/rating_review"
+            android:id="@+id/detail_page_text_review"
             android:layout_width="142dp"
             android:layout_height="44dp"
             android:gravity="right"
@@ -157,11 +157,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.461"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+            app:layout_constraintTop_toBottomOf="@+id/detail_page_ratingBar"
             app:layout_constraintVertical_bias="0.111" />
 
         <TextView
-            android:id="@+id/rating_reviewer"
+            android:id="@+id/detail_page_text_reviewer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="임수연"
@@ -169,7 +169,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.939"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+            app:layout_constraintTop_toBottomOf="@+id/detail_page_ratingBar"
             app:layout_constraintVertical_bias="0.509" />
 
 
@@ -177,7 +177,7 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout_2"
+        android:id="@+id/detail_page_cons2"
         android:layout_width="146dp"
         android:layout_height="179dp"
         android:layout_marginBottom="40dp"
@@ -188,20 +188,20 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/movie_story"
+            android:id="@+id/detail_page_title_story"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/chosun_font"
             android:text="@string/movie_detail_plot"
             android:textColor="@color/white"
-            app:layout_constraintBottom_toTopOf="@+id/movie_story_detail"
+            app:layout_constraintBottom_toTopOf="@+id/detail_page_text_detailStory"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.112"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/movie_story_detail"
+            android:id="@+id/detail_page_text_detailStory"
             android:layout_width="122dp"
             android:layout_height="112dp"
             android:layout_marginBottom="32dp"
@@ -214,7 +214,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/view_more"
+            android:id="@+id/detail_page_text_viewMore"
             android:layout_width="41dp"
             android:layout_height="18dp"
             android:layout_marginEnd="79dp"
@@ -224,13 +224,13 @@
             android:gravity="center"
             android:textColor="@color/green"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/movie_story_detail"
-            app:layout_constraintStart_toStartOf="@+id/movie_story_detail" />
+            app:layout_constraintEnd_toEndOf="@+id/detail_page_text_detailStory"
+            app:layout_constraintStart_toStartOf="@+id/detail_page_text_detailStory" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout_3"
+        android:id="@+id/detail_page_cons3"
         android:layout_width="146dp"
         android:layout_height="179dp"
         android:layout_marginBottom="40dp"
@@ -268,7 +268,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/detail_page_image_back"
         android:layout_width="51dp"
         android:layout_height="41dp"
         android:layout_marginTop="16dp"
@@ -286,7 +286,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/movie_name"
+        app:layout_constraintTop_toBottomOf="@+id/detail_page_title"
         app:layout_constraintVertical_bias="0.078" />
 
 
