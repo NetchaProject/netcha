@@ -9,9 +9,10 @@ class ProfilePageJina : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mypage_jina)
 
-        val back_mypage = findViewById<ImageView>(R.id.back_mypage)
+        val back_mypage = findViewById<ImageView>(R.id.mypage_image_back)
         back_mypage.setOnClickListener {
             finish()
+            overridePendingTransition(R.anim.slide_right_enter,R.anim.slide_right_exit)
         }
 
     }
