@@ -10,15 +10,19 @@ class MovieDetailPage3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_movie_detail_page3)
-        var image_sense = findViewById<ImageView>(R.id.famous_sense_img_witch)
-        var image_preview = findViewById<ImageView>(R.id.detailpage_image_preview1)
+        var image_sense = findViewById<ImageView>(R.id.detialpage3_img_famoussense)
+        var image_preview = findViewById<ImageView>(R.id.detailpage3_image_preview)
+        var image_back = findViewById<ImageView>(R.id.detailpage3_btn_back)
         image_sense.setOnClickListener{
-            var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://movie.daum.net/moviedb/main?movieId=111293"))
+            var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://movie.daum.net/moviedb/main?movieId=95306"))
             startActivity(intent)
         }
         image_preview.setOnClickListener{
-            var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=SEUyEpGHcsA&t=2s"))
+            var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://tv.kakao.com/v/80854967"))
             startActivity(intent)
+        }
+        image_back.setOnClickListener {
+            finish()
         }
     }
 }
