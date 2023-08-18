@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">netcha</string>
+    <string name="app_name">NETCHA</string>
     <string name="main_page_toolbar">HOME</string>
     <string name="main_page_text_login_user">welcome. My Bae Cam</string>
     <string name="main_page_text_recommend_movie">Featured Movie List</string>
@@ -100,8 +100,8 @@
     <string name="detail_page6_text_character2">Maggie Grace</string>
     <string name="up_pw_edit_text">Please write at least 3 characters in English + special characters</string>
     <string name="up_sign_up_button">Join</string>
-    <string name="activity_user_data_find_user_find_tv_name">Name</string>
-    <string name="activity_user_data_find_user_find_et_id">Please enter your name</string>
+    <string name="activity_user_data_find_user_find_tv_name">Nick Name</string>
+    <string name="activity_user_data_find_user_find_et_id">Please enter your Nick name</string>
     <string name="activity_user_data_user_find_btn_login">Check</string>
     <string name="activity_user_data_user_find_tv_fail">Information is incorrect</string>
     <string name="detail_page1_text_character1">Kim Dami</string>

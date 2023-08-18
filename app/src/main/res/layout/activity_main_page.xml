@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/black"
     tools:context=".MainPage">
 
@@ -39,7 +40,6 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/chosun_font"
-        android:text="@string/main_page_text_login_user"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -147,7 +147,6 @@
                 android:outlineSpotShadowColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
-
                 <ImageView
                     android:id="@+id/main_page_iv_movie1"
                     android:layout_width="match_parent"
@@ -183,12 +182,12 @@
                 android:outlineSpotShadowColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
-            <ImageView
-                android:id="@+id/main_page_iv_movie3"
-                android:layout_width="match_parent"
-                android:layout_height="450sp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/detailpage_image3" />
+                <ImageView
+                    android:id="@+id/main_page_iv_movie3"
+                    android:layout_width="match_parent"
+                    android:layout_height="450sp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/detailpage_image3" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -200,12 +199,12 @@
                 android:outlineSpotShadowColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
-            <ImageView
-                android:id="@+id/main_page_iv_movie4"
-                android:layout_width="match_parent"
-                android:layout_height="475sp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/detailpage_image4" />
+                <ImageView
+                    android:id="@+id/main_page_iv_movie4"
+                    android:layout_width="match_parent"
+                    android:layout_height="475sp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/detailpage_image4" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -217,13 +216,13 @@
                 android:outlineSpotShadowColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
-            <ImageView
-                android:id="@+id/main_page_iv_movie5"
-                android:layout_width="match_parent"
-                android:layout_height="450dp"
-                android:clipToOutline="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/detailpage_image5" />
+                <ImageView
+                    android:id="@+id/main_page_iv_movie5"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/detailpage_image5" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -235,13 +234,13 @@
                 android:outlineSpotShadowColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
-            <ImageView
-                android:id="@+id/main_page_iv_movie6"
-                android:layout_width="match_parent"
-                android:layout_height="475dp"
-                android:clipToOutline="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/detailpage_image6" />
+                <ImageView
+                    android:id="@+id/main_page_iv_movie6"
+                    android:layout_width="match_parent"
+                    android:layout_height="475dp"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/detailpage_image6" />
             </androidx.cardview.widget.CardView>
 
             <ImageView
