@@ -40,7 +40,6 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/chosun_font"
-        android:text="@string/main_page_text_login_user"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
