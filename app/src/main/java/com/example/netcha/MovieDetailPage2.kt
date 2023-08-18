@@ -12,8 +12,8 @@ class MovieDetailPage2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_movie_detail_page2)
 
-        val image_sense = findViewById<ImageView>(R.id.detialpage2_img_famoussense)
-        var image_preview = findViewById<ImageView>(R.id.detailpage2_image_preview1)
+        val image_sense = findViewById<ImageView>(R.id.detialpage_img_sense2)
+        var image_preview = findViewById<ImageView>(R.id.detailpage2_image_preview)
         var image_back = findViewById<ImageView>(R.id.detailpage2_btn_back)
         val viewMore = findViewById<TextView>(R.id.view_more)
         image_sense.setOnClickListener{

@@ -8,6 +8,7 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     tools:context=".MovieDetailPage1">
+
     <ImageView
         android:id="@+id/detailpage1_btn_back"
         android:layout_width="51dp"
@@ -22,17 +23,20 @@
 
     <TextView
         android:id="@+id/detailpage1_text_moviedetail"
-        android:layout_width="132dp"
-        android:layout_height="41dp"
-        android:layout_marginEnd="140dp"
+        android:layout_width="173dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="120dp"
         android:fontFamily="@font/chosun_font"
         android:text="@string/movie_detail"
         android:textColor="@color/white"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@id/detailpage1_image_preview1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/detailpage1_btn_back"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.113" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/detailpage1_text_pregview"
@@ -42,36 +46,36 @@
         android:fontFamily="@font/chosun_font"
         android:text="@string/movie_detail_preview"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/detailpage1_text_moviedetail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.062"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/detailpage1_text_moviedetail"
+        app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <ImageView
         android:id="@+id/detailpage1_image_preview1"
-        android:layout_width="320dp"
-        android:layout_height="160dp"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:scaleType="centerCrop"
         android:src="@drawable/detailpage_moviescene1"
         app:layout_constraintBottom_toTopOf="@+id/detailpage1_nestedScrollView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detailpage1_text_moviedetail"
-        app:layout_constraintVertical_bias="0.173" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/detailpage1_nestedScrollView"
-        android:layout_width="339dp"
-        android:layout_height="333dp"
+        android:layout_width="411dp"
+        android:layout_height="634dp"
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.804">
+        app:layout_constraintVertical_bias="1.0">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -82,14 +86,17 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/detailpage1_constraintLayout1"
-                android:layout_width="146dp"
-                android:layout_height="179dp"
-                android:layout_marginBottom="12dp"
+                android:layout_width="155dp"
+                android:layout_height="187dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/detailpage_btn_begie"
                 app:layout_constraintBottom_toTopOf="@+id/detailpage1_constraintLayout_3"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.098"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
                     android:id="@+id/detailpage1_text_actor"
@@ -98,7 +105,7 @@
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/chosun_font"
                     android:text="@string/movie_detail_actor"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.133"
                     app:layout_constraintStart_toStartOf="parent"
@@ -123,7 +130,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/chosun_font"
                     android:text="김다미"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     app:layout_constraintEnd_toEndOf="@+id/detailpage1_img_actor1"
                     app:layout_constraintStart_toStartOf="@+id/detailpage1_img_actor1"
                     app:layout_constraintTop_toBottomOf="@+id/detailpage1_img_actor1" />
@@ -135,7 +142,7 @@
                     android:layout_marginTop="1dp"
                     android:fontFamily="@font/chosun_font"
                     android:text="조민수"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     app:layout_constraintEnd_toEndOf="@+id/detailpage1_img_actor2"
                     app:layout_constraintStart_toStartOf="@+id/detailpage1_img_actor2"
                     app:layout_constraintTop_toBottomOf="@+id/detailpage1_img_actor2" />
@@ -158,15 +165,18 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/detailpage1_constraintLayout_2"
                 android:layout_width="155dp"
                 android:layout_height="187dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/detailpage_btn_purple"
-                android:id="@+id/detailpage1_constraintLayout_2"
-                app:layout_constraintBottom_toTopOf="@+id/detailpage1_constraintLayout_3"
+                app:layout_constraintBottom_toTopOf="@+id/detailpage1_constraintLayout_4"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.945"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintHorizontal_bias="0.934"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
 
                 <TextView
@@ -189,6 +199,7 @@
                     android:layout_height="15dp"
                     android:layout_marginTop="12dp"
                     android:numStars="5"
+                    android:progressTint="@color/beige"
                     android:rating="3"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.081"
@@ -197,8 +208,11 @@
 
                 <TextView
                     android:id="@+id/detailpage1_rating_review"
-                    android:layout_width="142dp"
-                    android:layout_height="44dp"
+                    android:layout_width="143dp"
+                    android:layout_height="43dp"
+                    android:fontFamily="@font/titlefont"
+                    android:textColor="@color/white"
+                    android:gravity="right"
                     android:text="@string/ratingreview_movie1_detailpage"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -211,7 +225,9 @@
                     android:id="@+id/detailpage1_rating_reviewer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/chosun_font"
                     android:text="@string/rating_movie1_detailpage"
+                    android:textColor="@color/white"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.939"
@@ -223,15 +239,58 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/detailpage1_constraintLayout_3"
-                android:layout_width="146dp"
-                android:layout_height="179dp"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/detailpage_btn_red"
+                android:id="@+id/detailpage1_constraintLayout_4"
+                android:layout_width="155dp"
+                android:layout_height="187dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/deatailpage_btn_yellow"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.098"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintHorizontal_bias="0.934"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detailpage1_constraintLayout_2">
+
+                <TextView
+                    android:id="@+id/detialpage1_famous_sense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/chosun_font"
+                    android:text="@string/movie_detail_sense"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toTopOf="@+id/detialpage1_img_famoussense"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.149"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:id="@+id/detialpage1_img_famoussense"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:src="@drawable/detailpage1_image_sense" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/detailpage1_constraintLayout_3"
+                android:layout_width="155dp"
+                android:layout_height="187dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/detailpage_btn_red"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/detailpage1_constraintLayout_4"
+                app:layout_constraintHorizontal_bias="0.338"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detailpage1_constraintLayout1">
 
                 <TextView
                     android:id="@+id/detailpage1_summury"
@@ -264,51 +323,14 @@
                     android:layout_width="41dp"
                     android:layout_height="18dp"
                     android:layout_margin="10dp"
-                    android:layout_marginEnd="79dp"
                     android:fontFamily="@font/titlefont"
                     android:gravity="center"
                     android:text="@string/detailpage_more"
                     android:textColor="@color/green"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/detailpage1_summury"
-                    app:layout_constraintStart_toStartOf="@+id/detailpage1_summury_detail" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/detailpage1_constraintLayout_4"
-                android:layout_width="146dp"
-                android:layout_height="179dp"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/deatailpage_btn_yellow"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.921"
-                app:layout_constraintStart_toStartOf="parent">
-
-                <TextView
-                    android:id="@+id/detialpage1_famous_sense"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:fontFamily="@font/chosun_font"
-                    android:text="@string/movie_detail_sense"
-                    android:textColor="@color/white"
-                    app:layout_constraintBottom_toTopOf="@+id/detialpage1_img_famoussense"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.149"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <ImageView
-                    android:id="@+id/detialpage1_img_famoussense"
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
-                    android:layout_marginBottom="16dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    tools:src="@drawable/detailpage1_image_sense" />
-
+                    app:layout_constraintTop_toBottomOf="@+id/detailpage1_summury_detail" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
