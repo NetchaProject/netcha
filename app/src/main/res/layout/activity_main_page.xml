@@ -138,58 +138,94 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
             <ImageView
                 android:id="@+id/main_page_iv_movie1"
                 android:layout_width="match_parent"
                 android:layout_height="475sp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/detailpage_image1" />
-
-
-            <ImageView
-                android:id="@+id/main_page_iv_movie2"
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="450sp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
                 android:layout_marginTop="17sp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/detailpage_image2" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
 
+                <ImageView
+                    android:id="@+id/main_page_iv_movie2"
+                    android:layout_width="match_parent"
+                    android:layout_height="450sp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/detailpage_image2" />
+            </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
             <ImageView
                 android:id="@+id/main_page_iv_movie3"
                 android:layout_width="match_parent"
                 android:layout_height="450sp"
-                android:layout_marginTop="17sp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/detailpage_image3" />
-
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
             <ImageView
                 android:id="@+id/main_page_iv_movie4"
                 android:layout_width="match_parent"
                 android:layout_height="475sp"
-                android:layout_marginTop="17sp"
+
                 android:scaleType="centerCrop"
                 android:src="@drawable/detailpage_image4" />
-
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
             <ImageView
                 android:id="@+id/main_page_iv_movie5"
                 android:layout_width="match_parent"
                 android:layout_height="450dp"
-                android:layout_marginTop="17dp"
                 android:clipToOutline="true"
                 android:scaleType="centerCrop"
                 android:src="@drawable/detailpage_image5" />
-
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
             <ImageView
                 android:id="@+id/main_page_iv_movie6"
                 android:layout_width="match_parent"
                 android:layout_height="475dp"
-                android:layout_marginTop="17dp"
                 android:clipToOutline="true"
                 android:scaleType="centerCrop"
                 android:src="@drawable/detailpage_image6" />
-
+            </androidx.cardview.widget.CardView>
             <ImageView
                 android:id="@+id/main_page_dummy_view"
                 android:layout_width="match_parent"

@@ -11,7 +11,7 @@ class MovieDetailPage3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_movie_detail_page3)
-        var image_sense = findViewById<ImageView>(R.id.detialpage3_img_famoussense)
+        var image_sense = findViewById<ImageView>(R.id.detialpage_img_famoussense3)
         var image_preview = findViewById<ImageView>(R.id.detailpage3_image_preview)
         var image_back = findViewById<ImageView>(R.id.detailpage3_btn_back)
         val viewMore = findViewById<TextView>(R.id.view_more)
