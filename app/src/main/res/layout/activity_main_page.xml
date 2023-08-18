@@ -141,21 +141,28 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="20dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="20dp"
+                android:elevation="20dp"
+                android:outlineSpotShadowColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
-            <ImageView
-                android:id="@+id/main_page_iv_movie1"
-                android:layout_width="match_parent"
-                android:layout_height="475sp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/detailpage_image1" />
+
+                <ImageView
+                    android:id="@+id/main_page_iv_movie1"
+                    android:layout_width="match_parent"
+                    android:layout_height="475sp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/detailpage_image1" />
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="20dp"
-                android:layout_marginTop="17sp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="20dp"
+                android:elevation="20dp"
+                android:outlineSpotShadowColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
@@ -170,8 +177,10 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="20dp"
-                android:layout_marginTop="17sp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="20dp"
+                android:elevation="20dp"
+                android:outlineSpotShadowColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
             <ImageView
@@ -181,26 +190,31 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/detailpage_image3" />
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="20dp"
-                android:layout_marginTop="17sp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="20dp"
+                android:elevation="20dp"
+                android:outlineSpotShadowColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
             <ImageView
                 android:id="@+id/main_page_iv_movie4"
                 android:layout_width="match_parent"
                 android:layout_height="475sp"
-
                 android:scaleType="centerCrop"
                 android:src="@drawable/detailpage_image4" />
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="20dp"
-                android:layout_marginTop="17sp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="20dp"
+                android:elevation="20dp"
+                android:outlineSpotShadowColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
             <ImageView
@@ -211,11 +225,14 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/detailpage_image5" />
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="20dp"
-                android:layout_marginTop="17sp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="20dp"
+                android:elevation="20dp"
+                android:outlineSpotShadowColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
             <ImageView
@@ -226,6 +243,7 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/detailpage_image6" />
             </androidx.cardview.widget.CardView>
+
             <ImageView
                 android:id="@+id/main_page_dummy_view"
                 android:layout_width="match_parent"

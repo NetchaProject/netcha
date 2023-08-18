@@ -104,4 +104,6 @@
     <string name="activity_user_data_find_user_find_et_id">Please enter your name</string>
     <string name="activity_user_data_user_find_btn_login">Check</string>
     <string name="activity_user_data_user_find_tv_fail">Information is incorrect</string>
+    <string name="detail_page1_text_character1">Kim Dami</string>
+    <string name="detail_page1_text_character2">Jo Su-mi</string>
 </resources>

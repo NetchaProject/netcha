@@ -7,13 +7,14 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 
-class MovieDetailPage3 : AppCompatActivity() {
+class Moviedetailpage3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_movie_detail_page3)
-        var image_sense = findViewById<ImageView>(R.id.detialpage_img_famoussense3)
-        var image_preview = findViewById<ImageView>(R.id.detailpage3_image_preview)
-        var image_back = findViewById<ImageView>(R.id.detailpage3_btn_back)
+
+        var image_sense = findViewById<ImageView>(R.id.detialpage_img_sense3)
+        var image_preview = findViewById<ImageView>(R.id.detail_page_image_preview)
+        var image_back = findViewById<ImageView>(R.id.detail_page_image_back)
         val viewMore = findViewById<TextView>(R.id.view_more)
         image_sense.setOnClickListener{
             var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://movie.daum.net/moviedb/main?movieId=95306"))

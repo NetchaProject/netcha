@@ -30,15 +30,15 @@
             android:name=".MovieDetailPage4"
             android:exported="false" />
         <activity
-            android:name=".MovieDetailPage3"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:exported="false" />
-        <activity
             android:name=".MovieDetailPage2"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="false" />
         <activity
-            android:name=".MovieDetailPage1"
+            android:name=".Moviedetailpage1"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false" />
+        <activity
+            android:name=".Moviedetailpage3"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="false" />
         <activity
