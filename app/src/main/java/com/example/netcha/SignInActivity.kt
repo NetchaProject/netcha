@@ -58,6 +58,7 @@ class SignInActivity : AppCompatActivity() {
             initValue()
         }else if (etLogin.text.toString().trim().isEmpty() && etPw.text.toString().trim().isEmpty()){
             tvFail.visibility = View.INVISIBLE
+            Toast.makeText(this, getString(R.string.activity_user_data_user_find_tv_fail), Toast.LENGTH_SHORT).show()
         }else{
             tvFail.visibility = View.VISIBLE
         }

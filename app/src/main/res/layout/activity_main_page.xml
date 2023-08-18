@@ -24,8 +24,8 @@
 
     <ImageButton
         android:id="@+id/main_page_btn_logout"
-        android:layout_width="35sp"
-        android:layout_height="30sp"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
         android:layout_margin="15dp"
         android:background="@drawable/main_page_profile_shape"
         android:scaleType="centerCrop"

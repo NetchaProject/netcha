@@ -60,13 +60,13 @@
     <string name="movie_detail_rating">평점</string>
     <string name="movie_detail_plot">줄거리</string>
     <string name="movie_detail_sense">명장면</string>
-    <string name="detialpage_summary_movie1">10년 전 의문의 사고가 일어난 시설에서 홀로 탈출한 후 모든 기억을 잃은 ‘자윤’. 나이도, 이름도 모르는 자신을 거두고 키워준 노부부의 보살핌으로 씩씩하고 밝은 여고생으로 자라났다. 어려운 집안사정을 돕기 위해 상금이 걸린 오디션 프로그램에 출연한 자윤, 방송이 나간 직후부터 의문의 인물들이 그녀 앞에 나타난다. 자윤의 주변을 맴돌며 날카롭게 지켜보는 남자 ‘귀공자’, 그리고 과거 사고가 일어난 시점부터 사라진 아이를 찾던 ‘닥터 백’과 ‘미스터 최’까지 자신은 전혀 기억하지 못하는 그들의 등장으로, 자윤은 혼란에 휩싸이게 되는데...! 그들이 나타난 후 모든 것이 바뀌었다</string>
+    <string name="detialpage_summary_movie1">10년 전 의문의 사고가 일어난 시설에서 홀로 탈출한 후 모든 기억을 잃은 ‘자윤’. 나이도, 이름도 모르는 자신을 거두고 키워준 노부부의 보살핌으로 씩씩하고 밝은 여고생으로 자라났다. 어려운 집안사정을 돕기 위해 상금이 걸린 오디션 프로그램에 출연한 자윤, 방송이 나간 직후부터 의문의 인물들이 그녀 앞에 나타난다. 자윤의 주변을 맴돌며 날카롭게 지켜보는 남자 ‘귀공자’, 그리고 과거 사고가 일어난 시점부터 사라진 아이를 찾던 ‘닥터 백’과 ‘미스터 최’까지 자신은 전혀 기억하지 못하는 그들의 등장으로, 자윤은 혼란에 휩싸이게 되는데…! 그들이 나타난 후 모든 것이 바뀌었다</string>
     <string name="signin_page_main_title">Welcome to</string>
     <string name="signin_page_sub_title">NetCha</string>
     <string name="signin_page_tv_id">아이디</string>
     <string name="signin_page_et_id_hint">아이디를 입력하세요</string>
-    <string name="signin_page_tv_pw">패스워드</string>
-    <string name="signin_page_et_pw_hint">패스워드를 입력하세요</string>
+    <string name="signin_page_tv_pw">비밀번호</string>
+    <string name="signin_page_et_pw_hint">비밀번호를 입력하세요</string>
     <string name="signin_page_btn_login">로그인</string>
     <string name="signin_page_btn_join">회원가입</string>
     <string name="signin_page_btn_find">아이디 / 비밀번호 찾기</string>
@@ -91,8 +91,8 @@
     <string name="up_id_text">아이디</string>
     <string name="up_id_edit_text">최소 3글자 이상 영문 및 숫자로 작성해주세요.</string>
     <string name="up_check_button">중복체크</string>
-    <string name="up_pw_text">Password</string>
-    <string name="up_pw_edit_text">최소 3글자이상 영어+특수문자로 작성해주세요</string>
+    <string name="up_pw_text">비밀번호</string>
+    <string name="up_pw_edit_text">최소 3글자 이상 영어+특수문자로 작성해주세요</string>
     <string name="up_sign_up_button">가입하기</string>
     <string name="detail_page4_text_character1">류승룡</string>
     <string name="detail_page4_text_character2">이하늬</string>
@@ -103,7 +103,7 @@
     <string name="activity_user_data_find_user_find_tv_name">닉네임</string>
     <string name="activity_user_data_find_user_find_et_id">닉네임을 입력하세요</string>
     <string name="activity_user_data_user_find_btn_login">확인</string>
-    <string name="activity_user_data_user_find_tv_fail">입력하신 정보가 존재하지 않습니다.</string>
+    <string name="activity_user_data_user_find_tv_fail">입력하신 정보가 올바르지 않습니다.</string>
     <string name="detail_page1_text_character1">김다미</string>
     <string name="detail_page1_text_character2">조수미</string>
 </resources>
