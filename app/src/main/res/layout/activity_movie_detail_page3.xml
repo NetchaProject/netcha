@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/black"
-    tools:context=".Moviedetailpage3">
+    tools:context=".MovieDetailPage3">
 
 
     <ImageView
