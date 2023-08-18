@@ -10,6 +10,12 @@ object UserDatabase {
         users.add(newUser)
     }
 
+    fun findUserValidation(id:String , pw : String): UserData?{
+        return users.find{
+            it.id == id
+            it.pw == pw
+        }
+    }
     fun findUserByName(name: String): UserData? {
         return users.find { it.name == name }
     }
