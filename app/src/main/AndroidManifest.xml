@@ -18,6 +18,7 @@
         tools:targetApi="31">
         <activity
             android:name=".UserDataFind"
+            android:screenOrientation="portrait"
             tools:targetApi="31" />
         <activity
             android:name=".MovieDetailPage6"
@@ -42,6 +43,7 @@
             android:exported="false" />
         <activity
             android:name=".SignUpActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".ProfilePageMinji"
@@ -60,12 +62,14 @@
             android:exported="false" />
         <activity
             android:name=".SignInActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".MainPage"
             android:exported="false" />
         <activity
             android:name=".Splash"
+            android:screenOrientation="portrait"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
