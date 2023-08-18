@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">netcha</string>
+    <string name="app_name">NETCHA</string>
     <string name="main_page_toolbar">HOME</string>
     <string name="main_page_text_login_user">welcome. My Bae Cam</string>
     <string name="main_page_text_recommend_movie">Featured Movie List</string>

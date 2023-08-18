@@ -2,6 +2,10 @@ package com.example.netcha
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.EditText
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
 
 class UserDataFind : AppCompatActivity() {
@@ -9,7 +13,7 @@ class UserDataFind : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user_data_find)
 
-        val toolbar : Toolbar = findViewById(R.id.user_find_toolbar)
+        val toolbar: Toolbar = findViewById(R.id.user_find_toolbar)
         setSupportActionBar(toolbar)
         supportActionBar?.apply {
             setDisplayHomeAsUpEnabled(true)

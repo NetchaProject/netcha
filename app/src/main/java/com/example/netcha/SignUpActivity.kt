@@ -45,7 +45,6 @@ class SignUpActivity : AppCompatActivity() {
         upbutton.setOnClickListener {
             if (areFields()) {
                 UserDatabase.addUser(nameText.text.toString(), idText.text.toString(), pwText.text.toString())
-                UserDatabase.info()
                 val intent = Intent(this, SignInActivity::class.java)
                 startActivity(intent)
                 overridePendingTransition(R.anim.slide_right_enter, R.anim.slide_right_exit)
@@ -161,35 +160,3 @@ class SignUpActivity : AppCompatActivity() {
             }
         }
     }
-
-
-// 싱글톤!!
-//        val etName : EditText = findViewById(R.id.up_name_edit)
-//        val etId : EditText = findViewById(R.id.up_id_edit)
-//        val etPw : EditText = findViewById(R.id.up_pw_edit)
-//        val btnJoinMember : Button = findViewById(R.id.up_button)
-//        btnJoinMember.setOnClickListener {
-//            UserDatabase.addUser(etName.text.toString(), etId.text.toString(), etPw.text.toString())
-//        }
-// 사용자 찾기
-//        val findName  = UserDatabase.findUserByName("여기 사용자 찾는 이름 입력란")
-//        val findId = UserDatabase.findUserById("여기 사용자 찾는 아이디 입력란")
-//        findName.let{
-//            Toast.makeText(this, "찾으시는 아이디는 ${it?.id} 입니다.", Toast.LENGTH_SHORT).show()
-//        }
-//        findId.let{
-//            Toast.makeText(this, "찾으시는 비밀번호는 ${it?.pw} 입니다.", Toast.LENGTH_SHORT).show()
-//        }
-// 사용자 지우기
-//        UserDatabase.removeUser(etId.text.toString())
-//        val upbtn = findViewById<Button>(R.id.up_button)
-//        val name = findViewById<EditText>(R.id.up_name_edit)
-//        upbtn.setOnClickListener {
-//            if (areFields()) {
-//                val intent = Intent(this, SignInActivity::class.java)  // Update the target activity
-//                intent.putExtra("Name", name.text.toString())
-//                startActivity(intent)
-//                overridePendingTransition(R.anim.slide_right_enter, R.anim.slide_right_exit)
-//            }
-//        }
-
