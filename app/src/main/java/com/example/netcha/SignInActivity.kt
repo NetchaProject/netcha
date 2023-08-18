@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 
 class SignInActivity : AppCompatActivity() {
     lateinit var etLogin: EditText
@@ -51,6 +52,7 @@ class SignInActivity : AppCompatActivity() {
         val data = UserDatabase.findUserValidation(etLogin.text.toString(), etPw.text.toString())
         if(data?.id == etLogin.text.toString() && data?.pw == etPw.text.toString() && !etLogin.text.toString().trim().isEmpty() && !etPw.text.toString().trim().isEmpty()){
             val intent = Intent(this, MainPage::class.java)
+            intent.putExtra("nickname", data?.name)
             startActivity(intent)
             overridePendingTransition(R.anim.slide_right_enter, R.anim.slide_right_exit)
             initValue()
