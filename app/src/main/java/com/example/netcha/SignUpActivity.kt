@@ -44,6 +44,8 @@ class SignUpActivity : AppCompatActivity() {
         // 가입 버튼 클릭  설정
         upbutton.setOnClickListener {
             if (areFields()) {
+                UserDatabase.addUser(nameText.text.toString(), idText.text.toString(), pwText.text.toString())
+                UserDatabase.info()
                 val intent = Intent(this, SignInActivity::class.java)
                 startActivity(intent)
                 overridePendingTransition(R.anim.slide_right_enter, R.anim.slide_right_exit)
@@ -77,18 +79,18 @@ class SignUpActivity : AppCompatActivity() {
                 val name = s.toString()
                 val englishText = name.replace(Regex("[^a-zA-Z ]"), "")
 
-                if (!name.isEmpty() && name != englishText) {
+                if (!name.isEmpty() && name != englishText || name.length < 3) {
                     nameErrorTextView.visibility = View.VISIBLE
                     nameCorrectTextView.visibility = View.INVISIBLE
                     upbutton.isEnabled = false // 이름에 영어 이외의 문자가 있을 때 버튼 비활성화
                 } else if (name.isEmpty()) {
                     nameErrorTextView.visibility = View.INVISIBLE
                     nameCorrectTextView.visibility = View.INVISIBLE
-                    upbutton.isEnabled = false // 모든 조건이 충족될 때 버튼 비활성화
+                    upbutton.isEnabled = false // 모든 조건이 충족되지 않을 때 버튼 비활성화
                 } else {
                     nameErrorTextView.visibility = View.INVISIBLE
                     nameCorrectTextView.visibility = View.VISIBLE
-                    upbutton.isEnabled = true // 모든 조건이 충족될 때 버튼 활성화
+                    upbutton.isEnabled = true //up버튼 활성화
                 }
             }
 
@@ -135,22 +137,23 @@ class SignUpActivity : AppCompatActivity() {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 val password = s.toString()
                 val hasSpecialChar = password.any { !it.isLetterOrDigit() }
+                val englishText = password.replace(Regex("[^a-zA-Z ]"), "")
                 var pwErrorTextView = findViewById<TextView>(R.id.up_pw_error_textview)
                 val pwCorrectTextView = findViewById<TextView>(R.id.up_pw_correct_textview)
 
-                // 메세지 출력
-                if (!password.isEmpty() && (password.length < 3 || !hasSpecialChar)) {
-                    pwErrorTextView.visibility = View.VISIBLE
-                    pwCorrectTextView.visibility = View.INVISIBLE
-                    upbutton.isEnabled = false
+//                 메세지 출력
+                if (!password.isEmpty() && (password.length > 2 && hasSpecialChar && password != englishText)) {
+                    pwErrorTextView.visibility = View.INVISIBLE
+                    pwCorrectTextView.visibility = View.VISIBLE
+                    upbutton.isEnabled = true
                 } else if(password.isEmpty()) {
                     pwErrorTextView.visibility = View.INVISIBLE
                     pwCorrectTextView.visibility = View.INVISIBLE
                     upbutton.isEnabled = false
                 } else{
-                    pwErrorTextView.visibility = View.INVISIBLE
-                    pwCorrectTextView.visibility = View.VISIBLE
-                    upbutton.isEnabled = true
+                    pwErrorTextView.visibility = View.VISIBLE
+                    pwCorrectTextView.visibility = View.INVISIBLE
+                    upbutton.isEnabled = false
                 }
             }
              override fun afterTextChanged(s: Editable?) {
