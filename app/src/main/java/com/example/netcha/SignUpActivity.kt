@@ -32,8 +32,7 @@ class SignUpActivity : AppCompatActivity() {
         upbutton = findViewById(R.id.up_button)
         upidcheck = findViewById(R.id.up_id_check)
 
-
-        // 이름 텍스트 변경 textwatcher
+        // 닉네임 텍스트 변경 textwatcher
         nameText.addTextChangedListener(createNameTextWatcher(nameText))
 
         // 아이디 텍스트 변경 textwatcher
@@ -68,71 +67,67 @@ class SignUpActivity : AppCompatActivity() {
     }
 
     private fun createNameTextWatcher(editText: EditText): TextWatcher {
+        val nameErrorTextView = findViewById<TextView>(R.id.up_name_error_textview)
+        val nameCorrectTextView = findViewById<TextView>(R.id.up_name_correct_textview)
+
         return object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
 
-            override fun afterTextChanged(s: Editable?) {
-                val text = s.toString()
-                // 이름이 비어있으면 가입 버튼 비활성화
-                upbutton.isEnabled = text.isNotEmpty()
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                val name = s.toString()
+                val englishText = name.replace(Regex("[^a-zA-Z ]"), "")
 
-                if (text.isEmpty()) {
-                    val hintText = editText.hint.toString()
-                    // 이름이 비어있을 때 힌트 메시지 토스트 표시
-                    Toast.makeText(this@SignUpActivity, "${hintText}", Toast.LENGTH_SHORT).show()
+                if (!name.isEmpty() && name != englishText) {
+                    nameErrorTextView.visibility = View.VISIBLE
+                    nameCorrectTextView.visibility = View.INVISIBLE
+                    upbutton.isEnabled = false // 이름에 영어 이외의 문자가 있을 때 버튼 비활성화
+                } else if (name.isEmpty()) {
+                    nameErrorTextView.visibility = View.INVISIBLE
+                    nameCorrectTextView.visibility = View.INVISIBLE
+                    upbutton.isEnabled = false // 모든 조건이 충족될 때 버튼 비활성화
+                } else {
+                    nameErrorTextView.visibility = View.INVISIBLE
+                    nameCorrectTextView.visibility = View.VISIBLE
+                    upbutton.isEnabled = true // 모든 조건이 충족될 때 버튼 활성화
                 }
             }
+
+            override fun afterTextChanged(s: Editable?) {}
         }
     }
+
 
     private fun createIdTextWatcher(editText: EditText): TextWatcher {
         return object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                val id = s.toString()
+                val idText = id.replace(Regex("[^a-zA-Z]"), "",)
+                val idText1 = id.replace(Regex("[^0-9]"), "")
+                val idErrorTextView = findViewById<TextView>(R.id.up_id_error_textview)
+                val idCorrectTextView = findViewById<TextView>(R.id.up_id_correct_textview)
 
-                upidcheck.setOnClickListener {
-                    if(s.toString().isEmpty()){
-                        upbutton.isEnabled = false
-                    }else{
-                        idText.setBackgroundColor(R.drawable.sign_up_edit_text)
-                        Toast.makeText(this@SignUpActivity,"들어옴", Toast.LENGTH_SHORT).show()
-                    }
+                // 조건에 맞지 않을 때 메세지 출력
+                if (!id.isEmpty() && idText != id && idText1 != id) {
+                    idErrorTextView.visibility = View.INVISIBLE
+                    idCorrectTextView.visibility = View.VISIBLE
+                    upbutton.isEnabled = true
+                } else if(id.isEmpty()){
+                    idErrorTextView.visibility = View.INVISIBLE
+                    idCorrectTextView.visibility = View.INVISIBLE
+                    upbutton.isEnabled = false // 모든 조건이 충족될 때 버튼 비활성화
+                } else {
+                    idErrorTextView.visibility = View.VISIBLE
+                    idCorrectTextView.visibility = View.INVISIBLE
+                    upbutton.isEnabled = false
                 }
             }
 
             override fun afterTextChanged(s: Editable?) {
-                val text = s.toString()
-//                val isEnglishAndDigits = text.matches(Regex("^[a-zA-Z0-9]*$"))
-                val threeOrMore = text.length >= 3
-
-                // 아이디가 영어와 숫자로 이루어져 있으며 최소 3자 이상이면 가입 버튼 활성화
-                upbutton.isEnabled = threeOrMore
-
-                // 아이디 체크 버튼 클릭 리스너 설정
-                upidcheck.setOnClickListener {
-                    if (text.isEmpty()) {
-                        val hintText = editText.hint.toString()
-                        // 아이디 입력이 비어있을 때 힌트 메시지 토스트 표시
-                        Toast.makeText(
-                            this@SignUpActivity, "$hintText 입력해주세요.", Toast.LENGTH_SHORT
-                        ).show()
-                    } else if (!threeOrMore) {
-                        // 아이디가 최소 3자 이상이 아닐 때 에러 메시지 토스트 표시
-                        Toast.makeText(
-                            this@SignUpActivity,
-                            "아이디는 최소 3자 이상이어야 합니다.",
-                            Toast.LENGTH_SHORT
-                        ).show()
-                    } else if (true) {
-                        // 아이디가 조건에 맞을 때 메시지 토스트 표시
-                        Toast.makeText(this@SignUpActivity, "아이디가 적합합니다.", Toast.LENGTH_SHORT)
-                            .show()
-                    }
-                }
             }
         }
     }
+
 
     private fun createPasswordTextWatcher(editText: EditText): TextWatcher {
         return object : TextWatcher {
@@ -140,65 +135,29 @@ class SignUpActivity : AppCompatActivity() {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 val password = s.toString()
                 val hasSpecialChar = password.any { !it.isLetterOrDigit() }
-                var errorTextView = findViewById<TextView>(R.id.up_pw_error_textview)
+                var pwErrorTextView = findViewById<TextView>(R.id.up_pw_error_textview)
+                val pwCorrectTextView = findViewById<TextView>(R.id.up_pw_correct_textview)
 
-
-                // 비밀번호가 3자 이상이면서 특수문자를 포함하면 가입 버튼 활성화
-                upbutton.isEnabled = password.length >= 3 && hasSpecialChar
-
-
-
-
-                if (!password.isEmpty()) {
-                    val hintText = editText.hint.toString()
-                    // 비밀번호 입력이 비어있을 때 힌트 메시지 토스트 표시
-                    Toast.makeText(this@SignUpActivity, "${hintText}.", Toast.LENGTH_SHORT)
-                        .show()
-
+                // 메세지 출력
+                if (!password.isEmpty() && (password.length < 3 || !hasSpecialChar)) {
+                    pwErrorTextView.visibility = View.VISIBLE
+                    pwCorrectTextView.visibility = View.INVISIBLE
+                    upbutton.isEnabled = false
+                } else if(password.isEmpty()) {
+                    pwErrorTextView.visibility = View.INVISIBLE
+                    pwCorrectTextView.visibility = View.INVISIBLE
+                    upbutton.isEnabled = false
+                } else{
+                    pwErrorTextView.visibility = View.INVISIBLE
+                    pwCorrectTextView.visibility = View.VISIBLE
+                    upbutton.isEnabled = true
                 }
             }
-
-            override fun afterTextChanged(s: Editable?) {
-//                val password = s.toString()
-//                val hasSpecialChar = password.any { !it.isLetterOrDigit() }
-//
-//                // 비밀번호가 3자 이상이면서 특수문자를 포함하면 가입 버튼 활성화
-//                upbutton.isEnabled = password.length >= 3 && hasSpecialChar
-//
-//                if (!password.isEmpty()) {
-//                    val hintText = editText.hint.toString()
-//                    // 비밀번호 입력이 비어있을 때 힌트 메시지 토스트 표시
-//                    Toast.makeText(this@SignUpActivity, "${hintText}.", Toast.LENGTH_SHORT)
-//                        .show()
-
-//                } else if (password.length < 3) {
-//                    // 비밀번호가 최소 3자 이상이 아닐 때 에러 메시지 토스트 표시
-//                    Toast.makeText(
-//                        this@SignUpActivity,
-//                        "비밀번호는 최소 3자 이상이어야 합니다.",
-//                        Toast.LENGTH_SHORT
-//                    ).show()
-//                } else if (!hasSpecialChar) {
-//                    // 비밀번호가 특수문자를 포함하지 않을 때 에러 메시지 토스트 표시
-//                    Toast.makeText(
-//                        this@SignUpActivity,
-//                        "비밀번호에 특수문자를 포함해주세요.",
-//                        Toast.LENGTH_SHORT
-//                    ).show()
-//                }
+             override fun afterTextChanged(s: Editable?) {
+                }
             }
         }
     }
-
-
-                // 비밀번호가 조건에 맞을 때만 가입 버튼 활성화
-                upbutton.isEnabled = password.length >= 3 && hasSpecialChar }
-
-            override fun afterTextChanged(s: Editable?) {}
-        }
-    }
-}
-
 
 
 // 싱글톤!!
