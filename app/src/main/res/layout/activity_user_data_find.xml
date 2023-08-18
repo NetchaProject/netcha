@@ -10,15 +10,17 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/user_find_toolbar"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:title="@string/signin_page_btn_find"
+        android:layout_marginTop="4dp"
         android:theme="@style/main_page_toolbar_font"
-        app:titleTextColor="@color/yellow"
-        app:titleTextAppearance="@style/main_page_toolbar_text_size"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/signin_page_btn_find"
+        app:titleTextAppearance="@style/main_page_toolbar_text_size"
+        app:titleTextColor="@color/yellow" />
 
     <ImageView
         android:id="@+id/user_find_iv1"
@@ -131,6 +133,17 @@
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user_find_tv_pw"/>
+
+    <ImageView
+        android:id="@+id/backbutton_user_data_find"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/user_find_toolbar"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_button" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
