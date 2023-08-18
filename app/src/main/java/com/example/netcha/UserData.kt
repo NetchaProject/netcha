@@ -1,5 +1,7 @@
 package com.example.netcha
 
+import android.util.Log
+
 data class UserData(val name: String, val id: String, val pw: String)
 
 object UserDatabase {
@@ -22,8 +24,7 @@ object UserDatabase {
         return users.find { it.pw == pw }
     }
 
-    fun removeUser(id: String) {
-        val userToRemove = users.find{it.id == id}
-        userToRemove.let{ users.remove(it)}
+    fun info(){
+        Log.d("jina","users: $users")
     }
 }
