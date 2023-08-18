@@ -100,4 +100,8 @@
     <string name="detail_page5_text_character2">김새론</string>
     <string name="detail_page6_text_character1">리암니슨</string>
     <string name="detail_page6_text_character2">매기그레이스</string>
+    <string name="activity_user_data_find_user_find_tv_name">이름</string>
+    <string name="activity_user_data_find_user_find_et_id">이름을 입력하세요</string>
+    <string name="activity_user_data_user_find_btn_login">확인</string>
+    <string name="activity_user_data_user_find_tv_fail">입력하신 정보가 존재하지 않습니다.</string>
 </resources>
