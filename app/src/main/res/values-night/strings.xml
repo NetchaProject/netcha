@@ -86,8 +86,8 @@
     <string name="rating_movie3_detailpage">한동원</string>
     <string name="sign_up_text">Sign Up</string>
     <string name="up_netcha_text">NetCha</string>
-    <string name="up_name_text">이름</string>
-    <string name="up_name_edit_text">이름을 입력해주세요.</string>
+    <string name="up_name_text">닉네임</string>
+    <string name="up_name_edit_text">영문으로 작성해주세요.</string>
     <string name="up_id_text">ID</string>
     <string name="up_id_edit_text">최소 3글자 이상 영문 및 숫자로 작성해주세요.</string>
     <string name="up_check_button">체크</string>
