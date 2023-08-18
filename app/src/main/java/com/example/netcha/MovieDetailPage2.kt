@@ -17,7 +17,7 @@ class MovieDetailPage2 : AppCompatActivity() {
         var image_back = findViewById<ImageView>(R.id.detail_page_image_back)
         val viewMore = findViewById<TextView>(R.id.detail_page_text_viewMore)
         image_preview.setOnClickListener{
-            var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://tv.kakao.com/v/80854967"))
+            var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://tv.kakao.com/v/48488770"))
             startActivity(intent)
         }
         image_back.setOnClickListener {
