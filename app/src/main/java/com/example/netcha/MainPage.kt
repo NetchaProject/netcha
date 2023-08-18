@@ -6,13 +6,18 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 
 class MainPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_page)
+        val userNickname : TextView = findViewById(R.id.main_page_tv_login_id)
         val btnLogout : ImageButton = findViewById(R.id.main_page_btn_logout)
+        val nickname = intent.getStringExtra("nickname")
+        userNickname.text = "환영합니다. $nickname 님"
         val imageViewList = listOf(
             findViewById<ImageView>(R.id.main_page_iv_profile1),
             findViewById<ImageView>(R.id.main_page_iv_profile2),
