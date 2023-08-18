@@ -87,8 +87,8 @@
     <string name="sign_up_text">Sign Up</string>
     <string name="up_netcha_text">NetCha</string>
     <string name="up_name_text">닉네임</string>
-    <string name="up_name_edit_text">최소 3글자이상 영문으로 작성해주세요.</string>
-    <string name="up_id_text">ID</string>
+    <string name="up_name_edit_text">최소 3글자 이상 영문으로 작성해주세요.</string>
+    <string name="up_id_text">아이디</string>
     <string name="up_id_edit_text">최소 3글자 이상 영문 및 숫자로 작성해주세요.</string>
     <string name="up_check_button">중복체크</string>
     <string name="up_pw_text">Password</string>
@@ -104,4 +104,6 @@
     <string name="activity_user_data_find_user_find_et_id">닉네임을 입력하세요</string>
     <string name="activity_user_data_user_find_btn_login">확인</string>
     <string name="activity_user_data_user_find_tv_fail">입력하신 정보가 존재하지 않습니다.</string>
+    <string name="detail_page1_text_character1">김다미</string>
+    <string name="detail_page1_text_character2">조수미</string>
 </resources>

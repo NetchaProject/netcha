@@ -9,49 +9,50 @@
     android:orientation="vertical"
     android:background="@color/black"
     tools:context=".MovieDetailPage2">
+
+
     <ImageView
-        android:id="@+id/detailpage2_btn_back"
+        android:id="@+id/detail_page_image_back"
         android:layout_width="51dp"
         android:layout_height="41dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="64dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back_button" />
-
 
     <TextView
         android:id="@+id/detailpage2_text_moviedetail"
         android:layout_width="168dp"
         android:layout_height="52dp"
-        android:layout_marginEnd="112dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="108dp"
         android:fontFamily="@font/chosun_font"
         android:text="@string/movie_detail"
         android:textColor="@color/white"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/detailpage2_image_preview"
+        app:layout_constraintBottom_toTopOf="@+id/detailpage_image_preview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.538" />
-
+        app:layout_constraintVertical_bias="0.354" />
 
     <TextView
         android:id="@+id/detailpage2_text_pregview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_width="79dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="124dp"
         android:fontFamily="@font/chosun_font"
         android:text="@string/movie_detail_preview"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/detailpage2_image_preview"
+        android:id="@+id/detailpage_image_preview"
         android:layout_width="match_parent"
         android:layout_height="170dp"
         android:scaleType="centerCrop"
@@ -61,25 +62,26 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.168" />
+        app:layout_constraintVertical_bias="0.303" />
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/detailpage2_nestedScrollView"
-        android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_width="400dp"
+        android:layout_height="314dp"
         android:layout_marginLeft="3dp"
         android:layout_marginRight="3dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="1dp"
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detailpage2_image_preview">
+        app:layout_constraintTop_toBottomOf="@+id/detailpage_image_preview"
+        app:layout_constraintVertical_bias="0.926">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/detailpage2_contentAreaWrapper1"
+            android:id="@+id/detailpage2_ContentAreaWrapper1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -90,8 +92,10 @@
                 android:layout_height="187dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="5dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="20dp"
                 android:background="@drawable/detailpage_btn_begie"
+                android:elevation="10dp"
+                android:outlineSpotShadowColor="@color/white"
                 app:layout_constraintBottom_toTopOf="@id/detailpage2_constraintLayout3"
                 app:layout_constraintEnd_toStartOf="@+id/detailpage2_constraintLayout2"
                 app:layout_constraintHorizontal_bias="0.099"
@@ -112,18 +116,30 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <ImageView
-                    android:id="@+id/detailpage2_img_character1"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/detailpage2_cardView"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:layout_margin="10dp"
-                    android:layout_marginStart="16dp"
-                    android:background="@drawable/main_page_profile_shape"
-                    android:clipToOutline="true"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/detailpage_movie2_character1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="37dp"
+                    android:elevation="100dp"
+                    android:outlineSpotShadowColor="@color/black"
+                    app:cardCornerRadius="200dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/detailpage2_character2"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/detailpage2_text_character" />
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/detailpage2_img_character1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/detailpage_movie2_character1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/detailpage2_text_character" />
+                </androidx.cardview.widget.CardView>
 
                 <TextView
                     android:id="@+id/detailpage2_character1"
@@ -133,9 +149,12 @@
                     android:gravity="center"
                     android:text="@string/detialpage2_character1"
                     android:textColor="@color/black"
-                    app:layout_constraintEnd_toEndOf="@+id/detailpage2_img_character1"
-                    app:layout_constraintStart_toStartOf="@+id/detailpage2_img_character1"
-                    app:layout_constraintTop_toBottomOf="@+id/detailpage2_img_character1" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/detailpage2_cardView"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/detailpage2_cardView"
+                    app:layout_constraintTop_toBottomOf="@+id/detailpage2_cardView"
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <TextView
                     android:id="@+id/detailpage2_img_character2"
@@ -163,8 +182,9 @@
                     android:src="@drawable/detailpage_movie2_character2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toEndOf="@+id/detailpage2_img_character1"
+                    app:layout_constraintStart_toEndOf="@+id/detailpage2_cardView"
                     app:layout_constraintTop_toBottomOf="@+id/detailpage2_text_character" />
+
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -174,8 +194,10 @@
                 android:layout_height="187dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="5dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="20dp"
                 android:background="@drawable/detailpage_btn_purple"
+                android:elevation="10dp"
+                android:outlineSpotShadowColor="@color/white"
                 app:layout_constraintBottom_toTopOf="@id/detailpage2_constraintLayout4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.945"
@@ -212,8 +234,8 @@
 
                 <TextView
                     android:id="@+id/detailpage2_rating_review"
-                    android:layout_width="121dp"
-                    android:layout_height="32dp"
+                    android:layout_width="140dp"
+                    android:layout_height="33dp"
                     android:fontFamily="@font/titlefont"
                     android:gravity="right"
                     android:text="@string/ratingreview_movie2_detailpage"
@@ -229,15 +251,15 @@
                     android:id="@+id/detailpage2_rating_reviewer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:layout_marginBottom="40dp"
                     android:fontFamily="@font/titlefont"
                     android:gravity="right"
                     android:text="@string/rating_movie2_detailpage"
                     android:textColor="@color/white"
-                    android:layout_marginTop="5dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.902"
+                    app:layout_constraintHorizontal_bias="0.952"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/detailpage2_rating_review"
                     app:layout_constraintVertical_bias="0.0" />
@@ -253,6 +275,8 @@
                 android:layout_marginEnd="5dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/detailpage_btn_red"
+                android:elevation="10dp"
+                android:outlineSpotShadowColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/detailpage2_constraintLayout4"
                 app:layout_constraintHorizontal_bias="0.098"
@@ -277,7 +301,7 @@
                     android:layout_width="122dp"
                     android:layout_height="112dp"
                     android:layout_marginBottom="32dp"
-                    android:fontFamily="@font/chosun_font"
+                    android:fontFamily="@font/titlefont"
                     android:maxLines="6"
                     android:text="@string/detailpage_summary_movie2"
                     android:textColor="@color/white"
@@ -286,7 +310,7 @@
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <TextView
-                    android:id="@+id/view_more"
+                    android:id="@+id/detail_page_text_viewMore"
                     android:layout_width="41dp"
                     android:layout_height="18dp"
                     android:layout_margin="10dp"
@@ -310,6 +334,8 @@
                 android:layout_marginEnd="5dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/deatailpage_btn_yellow"
+                android:elevation="10dp"
+                android:outlineSpotShadowColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.921"
@@ -318,7 +344,7 @@
                 app:layout_constraintVertical_bias="0.51">
 
                 <TextView
-                    android:id="@+id/detialpage1_famous_sense"
+                    android:id="@+id/detialpage2_famous_sense"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -330,20 +356,29 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <ImageView
-                    android:id="@+id/detialpage_img_sense2"
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
-                    android:layout_marginTop="5dp"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/detailpage2_cardView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    android:elevation="10dp"
+                    android:outlineSpotShadowColor="@color/black"
+                    app:cardCornerRadius="6dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.48"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/detialpage1_famous_sense"
-                    app:layout_constraintVertical_bias="0.0"
-                    app:srcCompat="@drawable/detailpage2_image_sense" />
+                    app:layout_constraintTop_toTopOf="parent">
 
-
+                    <ImageView
+                        android:id="@+id/detialpage_img_sense2"
+                        android:layout_width="130dp"
+                        android:layout_height="128dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/detailpage2_image_sense" />
+                </androidx.cardview.widget.CardView>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 

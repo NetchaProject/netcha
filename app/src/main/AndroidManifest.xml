@@ -33,6 +33,7 @@
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
+
             android:name=".MovieDetailPage3"
             android:screenOrientation="portrait"
             android:exported="false" />
