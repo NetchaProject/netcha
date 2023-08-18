@@ -1,7 +1,5 @@
 package com.example.netcha
 
-import android.util.Log
-
 data class UserData(val name: String, val id: String, val pw: String)
 
 object UserDatabase {
@@ -32,9 +30,5 @@ object UserDatabase {
 
     fun findUserByPw(pw: String) : UserData? {
         return users.find { it.pw == pw }
-    }
-
-    fun info(){
-        Log.d("jina","users: $users")
     }
 }
