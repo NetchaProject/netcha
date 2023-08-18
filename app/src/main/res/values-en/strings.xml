@@ -100,8 +100,8 @@
     <string name="detail_page6_text_character2">Maggie Grace</string>
     <string name="up_pw_edit_text">Please write at least 3 characters in English + special characters</string>
     <string name="up_sign_up_button">Join</string>
-    <string name="activity_user_data_find_user_find_tv_name">Name</string>
-    <string name="activity_user_data_find_user_find_et_id">Please enter your name</string>
+    <string name="activity_user_data_find_user_find_tv_name">Nick Name</string>
+    <string name="activity_user_data_find_user_find_et_id">Please enter your Nick name</string>
     <string name="activity_user_data_user_find_btn_login">Check</string>
     <string name="activity_user_data_user_find_tv_fail">Information is incorrect</string>
 </resources>

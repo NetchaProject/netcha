@@ -16,12 +16,15 @@ class UserDataFind : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user_data_find)
 
-        val toolbar: Toolbar = findViewById(R.id.user_find_toolbar)
-        setSupportActionBar(toolbar)
-        supportActionBar?.apply {
-            setDisplayHomeAsUpEnabled(true)
-            setDisplayShowHomeEnabled(true)
+        val btn = findViewById<ImageView>(R.id.backbutton_user_data_find)
+        btn.setOnClickListener{
+            val intent = Intent(this, SignInActivity::class.java)
+            startActivity(intent)
+            overridePendingTransition(R.anim.slide_right_enter, R.anim.slide_right_exit)
         }
+        
+        }
+      
 
         val userFindBtn = findViewById<Button>(R.id.user_find_btn_login)
         val userDataBase = UserDatabase
@@ -61,10 +64,5 @@ class UserDataFind : AppCompatActivity() {
         }
 
     }
-
-    override fun onSupportNavigateUp(): Boolean {
-        onBackPressed()
-        overridePendingTransition(R.anim.slide_right_enter, R.anim.slide_right_exit)
-        return true
     }
 }
