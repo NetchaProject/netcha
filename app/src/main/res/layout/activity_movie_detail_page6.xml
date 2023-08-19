@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".MovieDetailPage6">
+
+
+    <ImageView
+        android:id="@+id/detail_page_image_back"
+        android:layout_width="51dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_button" />
+
+    <TextView
+        android:id="@+id/detail_page_text_preview"
+        android:layout_width="168dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="108dp"
+        android:fontFamily="@font/chosun_font"
+        android:text="@string/movie_detail"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/detail_page_image_preview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354" />
+
+    <TextView
+        android:id="@+id/detail_page_title"
+        android:layout_width="79dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="124dp"
+        android:fontFamily="@font/chosun_font"
+        android:text="@string/movie_detail_preview"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/detail_page_image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/detailpage_movie6_thumbnail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_page_title"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/detailpage2_nestedScrollView"
+        android:layout_width="400dp"
+        android:layout_height="314dp"
+        android:layout_marginTop="70dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_page_image_preview">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/detail_page_Cons1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/detail_page_cons1"
+                android:layout_width="155dp"
+                android:layout_height="187dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/detailpage_btn_begie"
+                android:elevation="10dp"
+                android:outlineSpotShadowColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/detail_page_cons2"
+                app:layout_constraintEnd_toStartOf="@+id/detail_page_cons4"
+                app:layout_constraintHorizontal_bias="0.099"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detail_page_cons3"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/detail_page_title_actor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/chosun_font"
+                    android:text="@string/movie_detail_actor"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.133"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/detailpage2_cardView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="37dp"
+                    android:elevation="100dp"
+                    android:outlineSpotShadowColor="@color/black"
+                    app:cardCornerRadius="200dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/detail_page_image_character2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/detail_page_image_character1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/detailpage_movie6_character1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/detailpage2_text_character" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/detail_page_text_character1"
+                    android:layout_width="62dp"
+                    android:layout_height="31dp"
+                    android:fontFamily="@font/chosun_font"
+                    android:gravity="center"
+                    android:text="@string/detail_page6_text_character1"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/detailpage2_cardView"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/detailpage2_cardView"
+                    app:layout_constraintTop_toBottomOf="@+id/detailpage2_cardView"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/detail_page_text_character2"
+                    android:layout_width="51dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="@font/chosun_font"
+                    android:gravity="center"
+                    android:text="@string/detail_page6_text_character2"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="@+id/detail_page_image_character2"
+                    app:layout_constraintHorizontal_bias="0.555"
+                    app:layout_constraintStart_toStartOf="@+id/detail_page_image_character2"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_page_image_character2" />
+
+                <ImageView
+                    android:id="@+id/detail_page_image_character2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/main_page_profile_shape"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/detailpage_movie6_character2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/detailpage2_cardView"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_page_title_actor" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/detail_page_cons4"
+                android:layout_width="155dp"
+                android:layout_height="187dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/detailpage_btn_purple"
+                android:elevation="10dp"
+                android:outlineSpotShadowColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/detail_page_cons3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.945"
+                app:layout_constraintStart_toEndOf="@id/detail_page_cons1"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:id="@+id/detailpage2_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/chosun_font"
+                    android:text="@string/movie_detail_rating"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.069"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RatingBar
+                    android:id="@+id/detailpage2_ratingBar"
+                    style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+                    android:layout_width="81dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="12dp"
+                    android:numStars="5"
+                    android:progressTint="@color/beige"
+                    android:rating="3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.108"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/detailpage2_rating" />
+
+                <TextView
+                    android:id="@+id/detailpage2_rating_review"
+                    android:layout_width="133dp"
+                    android:layout_height="73dp"
+                    android:fontFamily="@font/titlefont"
+                    android:gravity="right"
+                    android:text="@string/detail_page_review6"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.647"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/detailpage2_ratingBar"
+                    app:layout_constraintVertical_bias="0.12" />
+
+                <TextView
+                    android:id="@+id/detailpage2_rating_reviewer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="40dp"
+                    android:fontFamily="@font/titlefont"
+                    android:gravity="right"
+                    android:text="@string/detail_page_reviewer6"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.942"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/detailpage2_rating_review"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/detail_page_cons2"
+                android:layout_width="155dp"
+                android:layout_height="187dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/detailpage_btn_red"
+                android:elevation="10dp"
+                android:outlineSpotShadowColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/detail_page_cons3"
+                app:layout_constraintHorizontal_bias="0.098"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detail_page_cons1">
+
+                <TextView
+                    android:id="@+id/detail_page_title_story"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/chosun_font"
+                    android:text="@string/movie_detail_plot"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toTopOf="@+id/detail_page_text_detailStory"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.112"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/detail_page_text_detailStory"
+                    android:layout_width="130dp"
+                    android:layout_height="114dp"
+                    android:layout_marginBottom="32dp"
+                    android:fontFamily="@font/titlefont"
+                    android:maxLines="6"
+                    android:text="@string/detail_page_summary_summary_movie6"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/detail_page_text_viewMore"
+                    android:layout_width="41dp"
+                    android:layout_height="18dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginBottom="12dp"
+                    android:fontFamily="@font/titlefont"
+                    android:gravity="center"
+                    android:text="@string/detailpage_more"
+                    android:textColor="@color/green"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.369"
+                    app:layout_constraintStart_toStartOf="@+id/detail_page_text_detailStory" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/detail_page_cons3"
+                android:layout_width="155dp"
+                android:layout_height="187dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/deatailpage_btn_yellow"
+                android:elevation="10dp"
+                android:outlineSpotShadowColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.921"
+                app:layout_constraintStart_toEndOf="@id/detail_page_cons2"
+                app:layout_constraintTop_toBottomOf="@+id/detail_page_cons4"
+                app:layout_constraintVertical_bias="0.51">
+
+                <TextView
+                    android:id="@+id/detail_page_title_bestScene"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/chosun_font"
+                    android:text="@string/movie_detail_sense"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.137"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/detailpage2_cardView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    android:elevation="10dp"
+                    android:outlineSpotShadowColor="@color/black"
+                    app:cardCornerRadius="6dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/detialpage_img_sense2"
+                        android:layout_width="130dp"
+                        android:layout_height="128dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/detailpage_moviescene6" />
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

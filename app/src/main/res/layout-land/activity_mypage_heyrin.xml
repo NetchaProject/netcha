@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="5dp"
+    tools:context=".ProfilePageHeyrin">
+
+    <ImageView
+        android:id="@+id/mypage_image_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/back_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mypage_text_title"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mypage_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:fontFamily="@font/chosun_font"
+        android:text="@string/mypage_title_hyerin"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/mypage_scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_text_title"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/mypage_text_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/citizen_font4"
+                android:gravity="center"
+                android:text="@string/mypage_text_profile"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.051"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/mypage_image_profile"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile_image1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mypage_text_profile" />
+
+            <TextView
+                android:id="@+id/mypage_text_preferGenre"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/citizen_font4"
+                android:gravity="center"
+                android:text="@string/mypage_text_preferGenre"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.055"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mypage_image_profile" />
+
+            <android.widget.Button
+                android:id="@+id/mypage_btn_genre1"
+                android:layout_width="170dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="@color/yellow"
+                android:fontFamily="@font/citizen_font4"
+                android:text="@string/mypage_text_genre_romance"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mypage_text_preferGenre" />
+
+            <android.widget.Button
+                android:id="@+id/mypage_btn_genre2"
+                android:layout_width="170dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="3dp"
+                android:backgroundTint="@color/purple"
+                android:fontFamily="@font/citizen_font4"
+                android:text="@string/mypage_text_genre_mystery"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/mypage_btn_genre3"
+                app:layout_constraintStart_toEndOf="@+id/mypage_btn_genre1"
+                app:layout_constraintTop_toBottomOf="@+id/mypage_text_preferGenre" />
+
+            <android.widget.Button
+                android:id="@+id/mypage_btn_genre3"
+                android:layout_width="170dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="@color/yellow"
+                android:fontFamily="@font/citizen_font4"
+                android:text="@string/mypage_text_genre_action"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mypage_text_preferGenre" />
+
+            <TextView
+                android:id="@+id/mypage_text_bestMovie"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/citizen_font4"
+                android:gravity="center"
+                android:text="@string/mypage_text_best_movie"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.056"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mypage_btn_genre1" />
+
+            <android.widget.Button
+                android:id="@+id/mypage_btn_movie1"
+                android:layout_width="170dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="@color/purple"
+                android:fontFamily="@font/citizen_font4"
+                android:text="@string/mypage_btn_movie10"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mypage_text_bestMovie" />
+
+            <android.widget.Button
+                android:id="@+id/mypage_btn_movie2"
+                android:layout_width="170dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="3dp"
+                android:backgroundTint="@color/yellow"
+                android:fontFamily="@font/citizen_font4"
+                android:text="@string/mypage_btn_movie11"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/mypage_btn_movie3"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toEndOf="@+id/mypage_btn_movie1"
+                app:layout_constraintTop_toBottomOf="@+id/mypage_text_bestMovie" />
+
+            <android.widget.Button
+                android:id="@+id/mypage_btn_movie3"
+                android:layout_width="170dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="3dp"
+                android:backgroundTint="@color/purple"
+                android:fontFamily="@font/citizen_font4"
+                android:text="@string/mypage_btn_movie12"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mypage_text_bestMovie" />
+
+            <TextView
+                android:id="@+id/mypage_text_bestLines"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/citizen_font4"
+                android:gravity="center"
+                android:text="@string/mypage_title_quote"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.089"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mypage_btn_movie1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/edittextfont"
+                android:gravity="center"
+                android:text="@string/mypage_text_quote_hyerin"
+                android:textColor="@color/red"
+                android:textSize="37sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mypage_text_bestLines" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
