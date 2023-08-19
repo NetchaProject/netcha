@@ -2,7 +2,7 @@
 
 # 🎥 NETCHA 🎬
 ### 넷플릭스(Netflix) 와 왓챠(watcha) 의 합성어인 NetCha
-- ## 🍿 Team Introduce
+- ## 🍿 Team Introduce 🍿
 #### [Team Notion] <https://www.notion.so/NetCha-9d8548e41b234cafb729b52e4ee8b64b>
 #### [Team GitHub] https://github.com/NetchaProject/netcha
 <br>
@@ -20,7 +20,7 @@
 ![image](https://github.com/NetchaProject/netcha/assets/121241416/3df6f1ab-e44a-4214-a9f6-8235ce5511c2)
 </details>
 
-- ## 🍺 Project Introduce
+- ## 🍺 Project Introduce 🍺
 <details>
 <summary>와이어 프레임</summary>
   
@@ -77,9 +77,9 @@
 - 예고편 아래의 이미지를 눌러 연결되어 있는 URL로 이동이 가능하며 줄거리에 내용을 더보기를 눌러 상세내용을 확인이 가능합니다.
 </details>
 
-- ##  Platforms & Languages 
+- ## 📚  Platforms & Languages 📚
 
 <img src="https://img.shields.io/badge/android-3DDC84?style=flat-square&logo=android&logoColor=white"/>  <img src="https://img.shields.io/badge/kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white"/>
-- ##  Tools 
-- 
+- ## 🛠 Tools 🛠
+  
 <img src="https://img.shields.io/badge/figma-F24E1E?style=flat-square&logo=figma&logoColor=white"/>  <img src="https://img.shields.io/badge/git-F05032?style=flat-square&logo=git&logoColor=white"/>  <img src="https://img.shields.io/badge/github-181717?style=flat-square&logo=github&logoColor=white"/>  <img src="https://img.shields.io/badge/notion-000000?style=flat-square&logo=notion&logoColor=white"/>
