@@ -1,12 +1,12 @@
 
 
 ![image](https://github.com/NetchaProject/netcha/assets/121241416/4f38aeb9-684b-44c6-aa4e-1b5a2f43f250)
-# 🎈 NETCHA 
+# 🎥 NETCHA 🎬
 ### 넷플릭스(Netflix) 와 왓챠(watcha) 의 합성어인 NetCha
 
 
 
-- ## Team Introduce
+- ## 🍿Team Introduce
 
 #### [Team Notion] <https://www.notion.so/NetCha-9d8548e41b234cafb729b52e4ee8b64b>
 
@@ -33,7 +33,7 @@
 
 
 
-- ## Project Introduce
+- ## 🍺 Project Introduce
 
 <details>
 <summary>와이어 프레임</summary>
