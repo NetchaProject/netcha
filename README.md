@@ -27,7 +27,7 @@
 
 <details>
 <summary>역할 분담</summary>
-![wireframe1](image-20.png)
+![wireframe1]([image-20.png](https://cdn.discordapp.com/attachments/901326137270108224/1142445734273224714/image.png)
 </details>
 
 
