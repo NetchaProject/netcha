@@ -69,7 +69,6 @@
 <summary>상세 페이지</summary>
   
 ![image](https://github.com/NetchaProject/netcha/assets/121241416/ad4601e8-1ede-43bc-a62e-0f19bb0336ce)
-
 ![image](https://github.com/NetchaProject/netcha/assets/121241416/d208014a-9d91-4c90-959e-36a7034e5d13)
 
 - 예고편 아래의 이미지를 눌러 연결되어 있는 URL로 이동이 가능하며 줄거리에 내용을 더보기를 눌러 상세내용을 확인이 가능합니다.
