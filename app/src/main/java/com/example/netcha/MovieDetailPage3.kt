@@ -25,7 +25,7 @@ class MovieDetailPage3 : AppCompatActivity() {
             overridePendingTransition(R.anim.slide_right_enter,R.anim.slide_right_exit)
         }
         viewMore.setOnClickListener {
-            val movieSummary = getString(R.string.detailpage_summary_movie2)
+            val movieSummary = getString(R.string.detialpage_summary_movie3)
 
             val movieDetailPopup = MovieDetailPopup(this, movieSummary)
             movieDetailPopup.show()

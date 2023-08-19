@@ -22,7 +22,7 @@
         android:id="@+id/detail_page_btn_fold"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:text="접기"
+        android:text="@string/detail_page_story_popup_fold"
         android:layout_margin="10dp"
         android:gravity="center"
         android:layout_gravity="end"
