@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">NETCHA</string>
     <string name="main_page_toolbar">HOME</string>
-    <string name="main_page_text_login_user">환영합니다. 내배캠 님</string>
+    <string name="main_page_text_login_user">환영합니다</string>
     <string name="main_page_text_recommend_movie">추천 영화 목록</string>
     <string name="mypage_title_jina">진아 페이지</string>
     <string name="mypage_title_yongsuk">용석 페이지</string>
@@ -107,4 +107,8 @@
     <string name="detail_page1_text_character1">김다미</string>
     <string name="detail_page1_text_character2">조수미</string>
     <string name="detail_page_story_popup_fold">접기</string>
+    <string name="main_page_tv_user_last_char">님</string>
+    <string name="main_page_tv_user_logout">로그아웃 하시겠습니까?</string>
+    <string name="main_page_tv_user_logout_no">취소</string>
+    <string name="main_page_tv_user_logout_yes">확인</string>
 </resources>

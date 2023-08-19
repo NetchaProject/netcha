@@ -39,10 +39,36 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
+        android:text="@string/main_page_text_login_user"
         android:fontFamily="@font/chosun_font"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_page_toolbar" />
+
+    <TextView
+        android:id="@+id/main_page_tv_login_id2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/chosun_font"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/main_page_tv_login_id"
+        app:layout_constraintTop_toBottomOf="@+id/main_page_toolbar" />
+
+    <TextView
+        android:id="@+id/main_page_tv_login_id3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/main_page_tv_user_last_char"
+        android:fontFamily="@font/chosun_font"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/main_page_tv_login_id2"
         app:layout_constraintTop_toBottomOf="@+id/main_page_toolbar" />
 
     <HorizontalScrollView

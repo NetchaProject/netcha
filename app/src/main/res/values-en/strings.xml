@@ -2,8 +2,8 @@
 <resources>
     <string name="app_name">NETCHA</string>
     <string name="main_page_toolbar">HOME</string>
-    <string name="main_page_text_login_user">welcome. My Bae Cam</string>
-    <string name="main_page_text_recommend_movie">Featured Movie List</string>
+    <string name="main_page_text_login_user">Welcome to</string>
+    <string name="main_page_text_recommend_movie">Recommend Movie</string>
     <string name="mypage_title_jina">Jina\'s page</string>
     <string name="mypage_title_yongsuk">Yongsuk\'s page</string>
     <string name="mypage_title_hyerin">Hyerin\'s page</string>
@@ -89,7 +89,7 @@
     <string name="up_name_text">Name</string>
     <string name="up_name_edit_text">Please enter a name</string>
     <string name="up_id_text">ID</string>
-    <string name="up_id_edit_text">Please write at least 3 letters in English and numbers.</string>
+    <string name="up_id_edit_text">at least 3 letters in English and numbers.</string>
     <string name="up_check_button">Check</string>
     <string name="up_pw_text">Password</string>
     <string name="detail_page4_text_character1">Seongryong Ryu</string>
@@ -98,7 +98,7 @@
     <string name="detail_page5_text_character2">Saeron Kim</string>
     <string name="detail_page6_text_character1">Liam Neeson</string>
     <string name="detail_page6_text_character2">Maggie Grace</string>
-    <string name="up_pw_edit_text">Please write at least 3 characters in English + special characters</string>
+    <string name="up_pw_edit_text">at least 3 characters in English + special char</string>
     <string name="up_sign_up_button">Join</string>
     <string name="activity_user_data_find_user_find_tv_name">Nick Name</string>
     <string name="activity_user_data_find_user_find_et_id">Please enter your Nick name</string>
@@ -107,4 +107,8 @@
     <string name="detail_page1_text_character1">Kim Dami</string>
     <string name="detail_page1_text_character2">Jo Su-mi</string>
     <string name="detail_page_story_popup_fold">fold</string>
+    <string name ="main_page_tv_user_last_char"></string>
+    <string name="main_page_tv_user_logout">you want to log out?</string>
+    <string name="main_page_tv_user_logout_no">no</string>
+    <string name="main_page_tv_user_logout_yes">yes</string>
 </resources>
