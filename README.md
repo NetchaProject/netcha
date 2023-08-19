@@ -25,7 +25,6 @@
 <summary>와이어 프레임</summary>
   
 ![image](https://github.com/NetchaProject/netcha/assets/121241416/956bbc1c-1a69-4cdc-b0bc-b2aa64d821ec)
-
 ![image](https://github.com/NetchaProject/netcha/assets/121241416/40223e50-21db-4f98-af1f-375ee4a4f13a)
 
 회의를 통하여 구체적인 설계에 들어가기 전에 대략적인 틀을 구성했습니다.
@@ -41,7 +40,6 @@
 <summary>회원가입 페이지</summary>
   
 ![image](https://github.com/NetchaProject/netcha/assets/121241416/8bfdbc5e-32c2-49a1-af22-3749fc5bb08a)
-
 ![image](https://github.com/NetchaProject/netcha/assets/121241416/9c355b78-974a-4957-8c6d-a2ab6a013a11)
 
 - `가입하기`로 각각의 EditText를 조건에 맞게 입력하여 가입된 정보와 중복체크를 하여 모든 조건을 충족하면 가입하기 버튼으로 데이터 저장이 가능합니다.
