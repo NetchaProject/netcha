@@ -6,6 +6,7 @@
 #### [Team Notion] <https://www.notion.so/NetCha-9d8548e41b234cafb729b52e4ee8b64b>
 #### [Team GitHub] https://github.com/NetchaProject/netcha
 <br>
+
 | 역할 | 이름   | 개인 Github 주소                 |
 | --- | ------ |----------------------------------|
 | 팀장 | 김진아 |<https://github.com/Jxxna613>|
@@ -75,6 +76,7 @@
 
 - 예고편 아래의 이미지를 눌러 연결되어 있는 URL로 이동이 가능하며 줄거리에 내용을 더보기를 눌러 상세내용을 확인이 가능합니다.
 </details>
+
 - ##  Platforms & Languages 
 
 <img src="https://img.shields.io/badge/android-3DDC84?style=flat-square&logo=android&logoColor=white"/>  <img src="https://img.shields.io/badge/kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white"/>
