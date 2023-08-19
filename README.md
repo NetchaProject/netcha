@@ -39,7 +39,7 @@
 <summary>와이어 프레임</summary>
 
 ![image](https://github.com/NetchaProject/netcha/assets/121241416/956bbc1c-1a69-4cdc-b0bc-b2aa64d821ec)
-![image](https://github.com/NetchaProject/netcha/assets/121241416/bc013dd2-38d5-4e84-aff6-d59a45966210)
+![image](https://github.com/NetchaProject/netcha/assets/121241416/b762a04f-f519-425f-a711-6ce05bdbf325)
 
 회의를 통하여 구체적인 설계에 들어가기 전에 대략적인 틀을 구성했습니다.
 </details>
