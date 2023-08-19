@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/black"
-    tools:context=".Moviedetailpage5">
+    tools:context=".MovieDetailPage5">
 
 
     <ImageView
@@ -57,27 +57,20 @@
         android:layout_height="170dp"
         android:scaleType="centerCrop"
         android:src="@drawable/detailpage_movie5_thumbnail"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.303" />
+        app:layout_constraintTop_toBottomOf="@+id/detail_page_title"/>
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/detailpage2_nestedScrollView"
         android:layout_width="400dp"
         android:layout_height="314dp"
-        android:layout_marginLeft="3dp"
-        android:layout_marginRight="3dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginTop="70dp"
         android:fillViewport="true"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detail_page_image_preview"
-        app:layout_constraintVertical_bias="0.926">
+        app:layout_constraintTop_toBottomOf="@+id/detail_page_image_preview">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -235,7 +228,7 @@
                 <TextView
                     android:id="@+id/detailpage2_rating_review"
                     android:layout_width="133dp"
-                    android:layout_height="41dp"
+                    android:layout_height="73dp"
                     android:fontFamily="@font/titlefont"
                     android:gravity="right"
                     android:text="@string/detail_page_review5"

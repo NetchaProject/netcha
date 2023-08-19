@@ -51,33 +51,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <ImageView
         android:id="@+id/detail_page_image_preview"
         android:layout_width="match_parent"
         android:layout_height="170dp"
+        android:layout_marginTop="8dp"
         android:scaleType="centerCrop"
         android:src="@drawable/detailpage_moviescene3"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.303" />
+        app:layout_constraintTop_toBottomOf="@+id/detailpage2_text_pregview" />
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/detailpage2_nestedScrollView"
         android:layout_width="400dp"
         android:layout_height="314dp"
-        android:layout_marginLeft="3dp"
-        android:layout_marginRight="3dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginTop="70dp"
         android:fillViewport="true"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detail_page_image_preview"
-        app:layout_constraintVertical_bias="0.926">
+        app:layout_constraintTop_toBottomOf="@+id/detail_page_image_preview">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -377,7 +372,7 @@
                         android:layout_height="128dp"
                         android:gravity="center"
                         android:padding="5dp"
-                        app:srcCompat="@drawable/detailpage2_image_sense" />
+                        app:srcCompat="@drawable/detailpage3_image_sense" />
                 </androidx.cardview.widget.CardView>
             </androidx.constraintlayout.widget.ConstraintLayout>
 

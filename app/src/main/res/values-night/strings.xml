@@ -106,6 +106,7 @@
     <string name="activity_user_data_user_find_tv_fail">입력하신 정보가 존재하지 않습니다.</string>
     <string name="detail_page1_text_character1">김다미</string>
     <string name="detail_page1_text_character2">조수미</string>
+    <string name="detail_page_story_popup_fold">접기</string>
     <string name ="main_page_tv_user_last_char">님</string>
     <string name="main_page_tv_user_logout">로그아웃 하시겠습니까?</string>
     <string name="main_page_tv_user_logout_no">취소</string>
