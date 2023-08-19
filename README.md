@@ -27,7 +27,7 @@
 
 <details>
 <summary>역할 분담</summary>
-![wireframe1]([image-20.png](https://cdn.discordapp.com/attachments/901326137270108224/1142445734273224714/image.png)
+![image](https://github.com/NetchaProject/netcha/assets/121241416/485aac50-74e5-46d8-b8e8-a23f2434d431)
 </details>
 
 
