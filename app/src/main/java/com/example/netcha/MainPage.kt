@@ -14,10 +14,10 @@ class MainPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_page)
-        val userNickname : TextView = findViewById(R.id.main_page_tv_login_id)
+        val userNickname : TextView = findViewById(R.id.main_page_tv_login_id2)
         val btnLogout : ImageButton = findViewById(R.id.main_page_btn_logout)
         val nickname = intent.getStringExtra("nickname")
-        userNickname.text = "환영합니다. $nickname 님"
+        userNickname.text = "$nickname"
         val imageViewList = listOf(
             findViewById<ImageView>(R.id.main_page_iv_profile1),
             findViewById<ImageView>(R.id.main_page_iv_profile2),
@@ -58,12 +58,12 @@ class MainPage : AppCompatActivity() {
 
         btnLogout.setOnClickListener {
             val builder = AlertDialog.Builder(this)
-            builder.setMessage("로그아웃 하시겠습니까?")
-                .setNegativeButton("취소",
+            builder.setMessage(getString(R.string.main_page_tv_user_logout))
+                .setNegativeButton(getString(R.string.main_page_tv_user_logout_no),
                 DialogInterface.OnClickListener{ dialog, id ->
 
                 })
-                .setPositiveButton("확인",
+                .setPositiveButton(getString(R.string.main_page_tv_user_logout_yes),
                 DialogInterface.OnClickListener { dialog, id ->
                     finish()
                     overridePendingTransition(R.anim.slide_right_enter,R.anim.slide_right_exit)
