@@ -26,7 +26,7 @@
 <details>
   <summary>역할 분담</summary>
   
-![image](https://github.com/NetchaProject/netcha/assets/121241416/ada0ef83-9534-46b5-acf7-5049d134e53c)
+![image](https://github.com/NetchaProject/netcha/assets/121241416/3df6f1ab-e44a-4214-a9f6-8235ce5511c2)
   
 </details>
 
