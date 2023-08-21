@@ -30,6 +30,14 @@
 회의를 통하여 구체적인 설계에 들어가기 전에 대략적인 틀을 구성했습니다.
 </details>
 <details>
+ <summary>스플래쉬 페이지</summary>
+
+ ![image](https://github.com/NetchaProject/netcha/assets/121241416/399d615a-01b2-4ae6-9080-41bc9498c543)
+ 
+ - 애니메이션이 들어간 페이지로 바로 로그인 페이지로 이동합니다. 
+  
+</details>
+<details>
 <summary>로그인 페이지</summary>
   
 ![image](https://github.com/NetchaProject/netcha/assets/121241416/d0ea56b9-65d9-474e-bc00-9a41c9a094fa)
